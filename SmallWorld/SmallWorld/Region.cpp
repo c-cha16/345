@@ -6,14 +6,33 @@
 //  Copyright © 2018 Charles Chan. All rights reserved.
 //
 
-//#include "Region.hpp"
+#include "Region.hpp"
 #include <iostream>
 using namespace std;
 #include <boost/config.hpp>
 #include <boost/graph/adjacency_matrix.hpp>
 #include <boost/graph/graph_utility.hpp>
 
+Region :: Region(){
+    owner = -1;
+    tokens = 0;
+}
 
+int Region::getTokens(){
+    return tokens;
+}
+
+void Region::setTokens(){
+    
+}
+
+int Region::getOwner(){
+    return owner;
+}
+
+void Region::setOwner(){
+    
+}
 
 int main(){
     enum { A, B, C, D, E, F, N };

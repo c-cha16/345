@@ -11,4 +11,19 @@
 
 #include <stdio.h>
 
+class Region {
+public:
+    Region();
+    int getTokens();
+    void setTokens();
+    int getOwner();
+    void setOwner();
+    
+private:
+    int tokens;
+    int owner;
+    
+};
+
+
 #endif /* Region_hpp */
