@@ -8,16 +8,18 @@
 #include <iostream>
 #include "Player.hpp"
 
-Player :: Player(){
+Player::Player(){
     
 }
-
-void Player :: picks_race(){
+Player::~Player(){
+    
+}
+void Player::picks_race(){
     cout << "picked race";
 }
-void Player :: conquers(){
+void Player::conquers(){
     cout << "conquered";
 }
-void Player :: scores(){
+void Player::scores(){
     cout << "scores";
 }

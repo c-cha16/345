@@ -18,6 +18,7 @@ public:
     void conquers();
     void scores();
     Player();
+    ~Player();
     
 private:
     
