@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75A966D7202BEA1A00A3E8CA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A966D6202BEA1A00A3E8CA /* main.cpp */; };
+		756EA9B2202E8F5900EBA09D /* MapLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 756EA9B0202E8F5900EBA09D /* MapLoader.cpp */; };
 		75A966DF202BEA7200A3E8CA /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A966DD202BEA7200A3E8CA /* Player.cpp */; };
+		75D2FAB8202E7B9A00A73308 /* libboost_graph-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D2FAB7202E7B9A00A73308 /* libboost_graph-mt.dylib */; };
+		75D2FABB202E804F00A73308 /* Region.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75D2FAB9202E804F00A73308 /* Region.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +26,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		756EA9B0202E8F5900EBA09D /* MapLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MapLoader.cpp; sourceTree = "<group>"; };
+		756EA9B1202E8F5900EBA09D /* MapLoader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MapLoader.hpp; sourceTree = "<group>"; };
 		75A966D3202BEA1A00A3E8CA /* SmallWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SmallWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A966D6202BEA1A00A3E8CA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		75A966DD202BEA7200A3E8CA /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		75A966DE202BEA7200A3E8CA /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+		75D2FAB7202E7B9A00A73308 /* libboost_graph-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libboost_graph-mt.dylib"; sourceTree = "<group>"; };
+		75D2FAB9202E804F00A73308 /* Region.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Region.cpp; sourceTree = "<group>"; };
+		75D2FABA202E804F00A73308 /* Region.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Region.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D2FAB8202E7B9A00A73308 /* libboost_graph-mt.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +52,7 @@
 		75A966CA202BEA1A00A3E8CA = {
 			isa = PBXGroup;
 			children = (
+				75D2FAB7202E7B9A00A73308 /* libboost_graph-mt.dylib */,
 				75A966D5202BEA1A00A3E8CA /* SmallWorld */,
 				75A966D4202BEA1A00A3E8CA /* Products */,
 			);
@@ -61,8 +70,12 @@
 			isa = PBXGroup;
 			children = (
 				75A966D6202BEA1A00A3E8CA /* main.cpp */,
+				756EA9B0202E8F5900EBA09D /* MapLoader.cpp */,
+				756EA9B1202E8F5900EBA09D /* MapLoader.hpp */,
 				75A966DD202BEA7200A3E8CA /* Player.cpp */,
 				75A966DE202BEA7200A3E8CA /* Player.hpp */,
+				75D2FAB9202E804F00A73308 /* Region.cpp */,
+				75D2FABA202E804F00A73308 /* Region.hpp */,
 			);
 			path = SmallWorld;
 			sourceTree = "<group>";
@@ -124,8 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D2FABB202E804F00A73308 /* Region.cpp in Sources */,
+				756EA9B2202E8F5900EBA09D /* MapLoader.cpp in Sources */,
 				75A966DF202BEA7200A3E8CA /* Player.cpp in Sources */,
-				75A966D7202BEA1A00A3E8CA /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +252,14 @@
 		75A966DB202BEA1A00A3E8CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /opt/local/include/;
+				LIBRARY_SEARCH_PATHS = (
+					/opt/local/lib/,
+					"$(PROJECT_DIR)/SmallWorld",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -246,7 +267,14 @@
 		75A966DC202BEA1A00A3E8CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /opt/local/include/;
+				LIBRARY_SEARCH_PATHS = (
+					/opt/local/lib/,
+					"$(PROJECT_DIR)/SmallWorld",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
