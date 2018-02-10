@@ -11,4 +11,12 @@
 
 #include <stdio.h>
 
+class MapLoader{
+public:
+    MapLoader();
+    ~MapLoader();
+private:
+    
+};
+
 #endif /* MapLoader_hpp */

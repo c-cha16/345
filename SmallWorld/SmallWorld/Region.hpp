@@ -8,20 +8,31 @@
 
 #ifndef Region_hpp
 #define Region_hpp
-
+#include <string>
 #include <stdio.h>
+using namespace std;
 
 class Region {
 public:
     Region();
-    int getTokens();
-    void setTokens();
-    int getOwner();
-    void setOwner();
+    ~Region();
+    Region(int toks, string own);
+    int getTokens(){
+        return tokens;
+    }
+    void setTokens(int toks){
+        tokens = toks;
+    }
+    string getOwner() const{
+        return owner;
+    }
+    void setOwner(string own){
+        owner = own;
+    }
     
 private:
     int tokens;
-    int owner;
+    string owner;
     
 };
 
