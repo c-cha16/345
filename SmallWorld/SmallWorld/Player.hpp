@@ -10,5 +10,18 @@
 #define Player_hpp
 
 #include <stdio.h>
+using namespace std;
+
+class Player {
+public:
+    void picks_race();
+    void conquers();
+    void scores();
+    Player();
+    ~Player();
+    
+private:
+    
+};
 
 #endif /* Player_hpp */

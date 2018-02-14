@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				75A966D6202BEA1A00A3E8CA /* main.cpp */,
-				75A966DD202BEA7200A3E8CA /* Player.cpp */,
 				75A966DE202BEA7200A3E8CA /* Player.hpp */,
+				75A966DD202BEA7200A3E8CA /* Player.cpp */,
 			);
 			path = SmallWorld;
 			sourceTree = "<group>";
