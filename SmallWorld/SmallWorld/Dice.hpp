@@ -14,9 +14,9 @@ using namespace std;
 
 
 class Dice{
-    int container [4] = {0};
-private:
-    
+    private:
+        float container [4] = {0};
+        int diceResult;
 public:
     
     Dice();

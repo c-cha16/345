@@ -14,11 +14,12 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     Dice* d1 = new Dice();
     Dice* d2 = new Dice();
-    int tokens = 50;
+    int tokens1 = 50;
+    int tokens2 = 50;
     int regionTokens[] = {1,2,3,4,5,6,7};
     
-    d1->rollingDice(tokens, regionTokens[1]);
-    d2->rollingDice(tokens, regionTokens[6]);
+    d1->rollingDice(tokens1, regionTokens[1]);
+    d2->rollingDice(tokens2, regionTokens[6]);
     
     
     
