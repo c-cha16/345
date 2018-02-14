@@ -1,0 +1,14 @@
+//
+//  Tokens.hpp
+//  SmallWorld
+//
+//  Created by Charles  Chan on 2018-02-14.
+//  Copyright © 2018 Charles Chan. All rights reserved.
+//
+
+#ifndef Tokens_hpp
+#define Tokens_hpp
+
+#include <stdio.h>
+
+#endif /* Tokens_hpp */

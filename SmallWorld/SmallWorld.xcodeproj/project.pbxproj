@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75982DEA20340FB60012ABC2 /* Tokens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75982DE820340FB60012ABC2 /* Tokens.cpp */; };
+		75982DED20340FC70012ABC2 /* RaceBanners.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75982DEB20340FC70012ABC2 /* RaceBanners.cpp */; };
+		75982DF0203415EB0012ABC2 /* Coins.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75982DEE203415EB0012ABC2 /* Coins.cpp */; };
+		75982DF3203416440012ABC2 /* Badges.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75982DF1203416440012ABC2 /* Badges.cpp */; };
+		75982DF62034165D0012ABC2 /* GamePieces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75982DF42034165D0012ABC2 /* GamePieces.cpp */; };
 		75A966D7202BEA1A00A3E8CA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A966D6202BEA1A00A3E8CA /* main.cpp */; };
 		75A966DF202BEA7200A3E8CA /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A966DD202BEA7200A3E8CA /* Player.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +29,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		75982DE820340FB60012ABC2 /* Tokens.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tokens.cpp; sourceTree = "<group>"; };
+		75982DE920340FB60012ABC2 /* Tokens.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tokens.hpp; sourceTree = "<group>"; };
+		75982DEB20340FC70012ABC2 /* RaceBanners.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RaceBanners.cpp; sourceTree = "<group>"; };
+		75982DEC20340FC70012ABC2 /* RaceBanners.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RaceBanners.hpp; sourceTree = "<group>"; };
+		75982DEE203415EB0012ABC2 /* Coins.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Coins.cpp; sourceTree = "<group>"; };
+		75982DEF203415EB0012ABC2 /* Coins.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Coins.hpp; sourceTree = "<group>"; };
+		75982DF1203416440012ABC2 /* Badges.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Badges.cpp; sourceTree = "<group>"; };
+		75982DF2203416440012ABC2 /* Badges.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Badges.hpp; sourceTree = "<group>"; };
+		75982DF42034165D0012ABC2 /* GamePieces.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GamePieces.cpp; sourceTree = "<group>"; };
+		75982DF52034165D0012ABC2 /* GamePieces.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GamePieces.hpp; sourceTree = "<group>"; };
 		75A966D3202BEA1A00A3E8CA /* SmallWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SmallWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A966D6202BEA1A00A3E8CA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		75A966DD202BEA7200A3E8CA /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
@@ -61,6 +76,16 @@
 			isa = PBXGroup;
 			children = (
 				75A966D6202BEA1A00A3E8CA /* main.cpp */,
+				75982DE820340FB60012ABC2 /* Tokens.cpp */,
+				75982DE920340FB60012ABC2 /* Tokens.hpp */,
+				75982DEB20340FC70012ABC2 /* RaceBanners.cpp */,
+				75982DEC20340FC70012ABC2 /* RaceBanners.hpp */,
+				75982DEE203415EB0012ABC2 /* Coins.cpp */,
+				75982DEF203415EB0012ABC2 /* Coins.hpp */,
+				75982DF1203416440012ABC2 /* Badges.cpp */,
+				75982DF2203416440012ABC2 /* Badges.hpp */,
+				75982DF42034165D0012ABC2 /* GamePieces.cpp */,
+				75982DF52034165D0012ABC2 /* GamePieces.hpp */,
 				75A966DE202BEA7200A3E8CA /* Player.hpp */,
 				75A966DD202BEA7200A3E8CA /* Player.cpp */,
 			);
@@ -124,7 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75982DF0203415EB0012ABC2 /* Coins.cpp in Sources */,
+				75982DED20340FC70012ABC2 /* RaceBanners.cpp in Sources */,
+				75982DEA20340FB60012ABC2 /* Tokens.cpp in Sources */,
+				75982DF3203416440012ABC2 /* Badges.cpp in Sources */,
 				75A966DF202BEA7200A3E8CA /* Player.cpp in Sources */,
+				75982DF62034165D0012ABC2 /* GamePieces.cpp in Sources */,
 				75A966D7202BEA1A00A3E8CA /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
