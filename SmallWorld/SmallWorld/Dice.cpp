@@ -13,7 +13,6 @@ using namespace std;
 #include "Dice.hpp"
 
 
-float container [4] = {0};
 int diceResult;
 Dice::Dice(){
     //cout<<"DICE WAS JUST CREATED"<<endl;
@@ -47,8 +46,7 @@ void Dice::storeResults(int i){
 }
 
 void Dice::rollingDice(int tokens, int regionTokens){ //rolling the dice method
-    bool repeat;
-    int numOfDice;
+    int numConquer;
     int showResults;
     int x = 0;
     //int diceResult;
@@ -59,13 +57,26 @@ void Dice::rollingDice(int tokens, int regionTokens){ //rolling the dice method
     while(x==0){
         diceResult=random();
         storeResults(diceResult);
+        cout << "The dice you rolled was ";
+        cout << diceResult << endl;
+        cout << "In your hand, you have ";
+        cout << tokens;
+        cout << " tokens remaining." <<endl;
+        cout << "Would you like to conquer the territory? 0 for yes" <<endl;
+        cin >> numConquer;
+        if(numConquer == 0){
+            tokens = tokens - regionTokens;
+        }
+        cout << "In your hand, you have ";
+        cout << tokens;
+        cout << " tokens remaining." <<endl;
         
-        cout <<"Press 1 to see how many dices of each you have rolled so far.\n";
+        cout <<"Press 1 to see how many dices of each you have rolled so far. Press 0 to continue\n";
         cin >> showResults;
         if(showResults==1){
             percentage();
         }
-
+        
         cout << "Stop rolling press 1, continue press 0" << endl;
         cin >> x;
         

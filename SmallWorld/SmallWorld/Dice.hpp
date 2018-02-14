@@ -14,7 +14,7 @@ using namespace std;
 
 
 class Dice{
-    
+    int container [4] = {0};
 private:
     
 public:
