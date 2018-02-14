@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75A966D7202BEA1A00A3E8CA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A966D6202BEA1A00A3E8CA /* main.cpp */; };
+		751007F72033D5DB00560771 /* Dice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 751007F52033D5DB00560771 /* Dice.cpp */; };
+		75A966D7202BEA1A00A3E8CA /* DiceDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A966D6202BEA1A00A3E8CA /* DiceDriver.cpp */; };
 		75A966DF202BEA7200A3E8CA /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A966DD202BEA7200A3E8CA /* Player.cpp */; };
 /* End PBXBuildFile section */
 
@@ -24,8 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		751007F52033D5DB00560771 /* Dice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dice.cpp; sourceTree = "<group>"; };
+		751007F62033D5DB00560771 /* Dice.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Dice.hpp; sourceTree = "<group>"; };
 		75A966D3202BEA1A00A3E8CA /* SmallWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SmallWorld; sourceTree = BUILT_PRODUCTS_DIR; };
-		75A966D6202BEA1A00A3E8CA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		75A966D6202BEA1A00A3E8CA /* DiceDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DiceDriver.cpp; sourceTree = "<group>"; };
 		75A966DD202BEA7200A3E8CA /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		75A966DE202BEA7200A3E8CA /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,9 +63,11 @@
 		75A966D5202BEA1A00A3E8CA /* SmallWorld */ = {
 			isa = PBXGroup;
 			children = (
-				75A966D6202BEA1A00A3E8CA /* main.cpp */,
+				75A966D6202BEA1A00A3E8CA /* DiceDriver.cpp */,
 				75A966DE202BEA7200A3E8CA /* Player.hpp */,
 				75A966DD202BEA7200A3E8CA /* Player.cpp */,
+				751007F52033D5DB00560771 /* Dice.cpp */,
+				751007F62033D5DB00560771 /* Dice.hpp */,
 			);
 			path = SmallWorld;
 			sourceTree = "<group>";
@@ -124,8 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				751007F72033D5DB00560771 /* Dice.cpp in Sources */,
 				75A966DF202BEA7200A3E8CA /* Player.cpp in Sources */,
-				75A966D7202BEA1A00A3E8CA /* main.cpp in Sources */,
+				75A966D7202BEA1A00A3E8CA /* DiceDriver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
