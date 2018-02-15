@@ -8,7 +8,13 @@
 
 #ifndef GamePieces_hpp
 #define GamePieces_hpp
+#include "MapObjects.hpp"
 
 #include <stdio.h>
+class GamePieces : public MapObjects{
+public:
+    
+private:
+};
 
 #endif /* GamePieces_hpp */

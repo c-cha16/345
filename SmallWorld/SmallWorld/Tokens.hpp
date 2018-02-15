@@ -8,7 +8,17 @@
 
 #ifndef Tokens_hpp
 #define Tokens_hpp
+#include <string>
 
+using namespace std;
 #include <stdio.h>
+class Tokens{ //14 races + lost tribe
+public:
+    Tokens();
+    ~Tokens();
+    
+private:
+    string race;
+};
 
 #endif /* Tokens_hpp */

@@ -7,3 +7,12 @@
 //
 
 #include "Tokens.hpp"
+using namespace std;
+
+Tokens::Tokens(){
+    
+}
+
+Tokens::~Tokens(){
+    
+}
