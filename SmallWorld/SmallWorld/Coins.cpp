@@ -7,15 +7,14 @@
 //
 
 #include "Coins.hpp"
-using namespace std;
+
 
 // 1, 3, 5, 10
 Coins::Coins(){
-    tokenCount++;
+    value =0;
 }
 Coins::Coins(int v){
     value = v;
-    tokenCount++;
 }
 Coins::~Coins(){
     

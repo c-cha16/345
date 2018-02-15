@@ -7,12 +7,16 @@
 //
 
 #include <iostream>
+#include "AllComponents.hpp"
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
+    AllComponents* ac = new AllComponents();
     
+    ac->createCoins();
     
+    ac->showBank();
     
     return 0;
 }

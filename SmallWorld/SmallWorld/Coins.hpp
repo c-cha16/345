@@ -15,15 +15,10 @@ public:
     Coins();
     Coins(int v);
     ~Coins();
-    int getValue(){
-        return value;
-    }
-    void setValue(int v){
-        value = v;
-    }
+    int getValue(){ return value;}
+    void setValue(int v){ value = v;}
 private:
     int value;
-    static int tokenCount;
 };
 
 #endif /* Coins_hpp */

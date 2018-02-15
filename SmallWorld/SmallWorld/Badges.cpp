@@ -7,3 +7,15 @@
 //
 
 #include "Badges.hpp"
+
+Badges::Badges(){
+    name = "";
+    tokenAmt =0;
+}
+Badges::Badges(string s, int n){
+    name = s;
+    tokenAmt =n;
+}
+Badges::~Badges(){
+    
+}

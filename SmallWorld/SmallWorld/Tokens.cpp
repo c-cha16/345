@@ -7,12 +7,14 @@
 //
 
 #include "Tokens.hpp"
-using namespace std;
+
 
 Tokens::Tokens(){
-    
+    race = "default";
 }
-
+Tokens::Tokens(string s){
+    race = s;
+}
 Tokens::~Tokens(){
     
 }

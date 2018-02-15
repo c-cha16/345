@@ -9,12 +9,19 @@
 #ifndef GamePieces_hpp
 #define GamePieces_hpp
 #include "MapObjects.hpp"
+#include <string>
+using namespace std;
 
 #include <stdio.h>
 class GamePieces : public MapObjects{
 public:
-    
+    GamePieces();
+    ~GamePieces();
+    GamePieces(string s);
+    string getType(){ return type;}
+    void setType(string s){ type = s;}
 private:
+    string type;
 };
 
 #endif /* GamePieces_hpp */

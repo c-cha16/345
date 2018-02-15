@@ -7,3 +7,12 @@
 //
 
 #include "GamePieces.hpp"
+GamePieces::GamePieces(){
+    type = "";
+}
+GamePieces::GamePieces(string s){
+    type = s;
+}
+GamePieces::~GamePieces(){
+    
+}

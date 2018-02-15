@@ -7,3 +7,11 @@
 //
 
 #include "RaceBanners.hpp"
+//14 races
+//active/decline skills
+RaceBanners::RaceBanners(){
+    race = "";
+}
+RaceBanners::~RaceBanners(){
+    
+}

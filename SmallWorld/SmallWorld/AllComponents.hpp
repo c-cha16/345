@@ -17,8 +17,9 @@ public:
     ~AllComponents();
     void createCoins();
     //getter/setter banks
+    void showBank();
 private:
-    Coins bank [4] = {0};
+    Coins* bank;
 };
 
 #endif /* AllComponents_hpp */

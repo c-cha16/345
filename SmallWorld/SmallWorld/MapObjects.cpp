@@ -7,3 +7,10 @@
 //
 
 #include "MapObjects.hpp"
+
+MapObjects::MapObjects(){
+    
+}
+MapObjects::~MapObjects(){
+    
+}

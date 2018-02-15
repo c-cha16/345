@@ -9,14 +9,18 @@
 #ifndef Tokens_hpp
 #define Tokens_hpp
 #include <string>
+#include "MapObjects.hpp"
+#include <stdio.h>
 
 using namespace std;
-#include <stdio.h>
-class Tokens{ //14 races + lost tribe
+
+class Tokens: public MapObjects{ //14 races + lost tribe
 public:
     Tokens();
     ~Tokens();
-    
+    Tokens(string s);
+    string getRace(){ return race; }
+    void setRace(string s){ race=s; };
 private:
     string race;
 };
