@@ -12,11 +12,16 @@ Region::Region(){
     owner = "";
     tokens = 0;
 }
-Region::~Region(){
-    
+Region::Region(Region const &r){
+    owner = r.owner;
+    tokens = r.tokens;
 }
-
 Region::Region(int toks, string own){
     owner = own;
     tokens = toks;
 }
+Region::~Region(){
+    
+}
+
+

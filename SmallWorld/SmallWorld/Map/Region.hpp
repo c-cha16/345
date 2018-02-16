@@ -16,20 +16,17 @@ using namespace std;
 class Region {
 public:
     Region();
+    Region(Region const &r);
     ~Region();
     Region(int toks, string own);
     int getTokens(){
-        return tokens;
-    }
+        return tokens;}
     void setTokens(int toks){
-        tokens = toks;
-    }
+        tokens = toks;}
     string getOwner() const{
-        return owner;
-    }
+        return owner;}
     void setOwner(string own){
-        owner = own;
-    }
+        owner = own;}
     
 private:
     int tokens;
