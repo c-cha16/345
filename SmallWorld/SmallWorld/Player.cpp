@@ -19,6 +19,8 @@ Player::~Player(){
     power = nullptr;
     delete availTokens;
     availTokens = nullptr;
+    //delete dice;
+    dice = nullptr;
 }
 void Player::picks_race(){
     cout << "picked race";

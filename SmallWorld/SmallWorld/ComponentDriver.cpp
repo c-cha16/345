@@ -10,9 +10,10 @@
 #include "AllComponents.h"
 #include "Player.hpp"
 #include "Region.hpp"
+#include "Dice.hpp"
 
 using namespace std;
-/*
+
 int main(int argc, const char * argv[]) {
     AllComponents* ac = new AllComponents();
     
@@ -54,6 +55,13 @@ int main(int argc, const char * argv[]) {
     p1->showSheet();
     p2->showSheet();
     
+    Dice* d1 = new Dice();
+    Dice* d2 = new Dice();
+    p1->addDice(*d1);
+    p2->addDice(*d2);
+    p1->roll(35, 2);
+    p2->roll(30, 1);
+    
     delete b1;
     b1 = nullptr;
     delete b2;
@@ -62,6 +70,11 @@ int main(int argc, const char * argv[]) {
     p1 = nullptr;
     delete p2;
     p2 = nullptr;
+    delete d1;
+    d1 =nullptr;
+    delete d2;
+    d2 =nullptr;
+    
     return 0;
 }
-*/
+
