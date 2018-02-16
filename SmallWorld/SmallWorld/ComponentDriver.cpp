@@ -11,6 +11,7 @@
 #include "Player.hpp"
 #include "Region.hpp"
 #include "Dice.hpp"
+#include "MapLoader.hpp"
 
 using namespace std;
 
@@ -75,6 +76,11 @@ int main(int argc, const char * argv[]) {
     delete d2;
     d2 =nullptr;
     
+    MapLoader* mp = new MapLoader();
+    mp->readFile("2_3person.map");
+    
+    delete mp;
+    mp = nullptr;
     return 0;
 }
 

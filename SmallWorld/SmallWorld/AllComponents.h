@@ -40,7 +40,7 @@ private:
     RaceBanners* raceHolder;
     Tokens* tokenHolder;
     GamePieces* pieceHolder;
-    //not done
+    
     Badges* badgeHolder;
     
 };

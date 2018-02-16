@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7542EBC92037850D00B8C749 /* MapLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7542EBC72037850D00B8C749 /* MapLoader.cpp */; };
 		756E18102036CA0C000CE39F /* Region.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 756E180E2036CA0C000CE39F /* Region.cpp */; };
 		7584E4B42036A69E004C37D3 /* MapDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7584E4B32036A69E004C37D3 /* MapDriver.cpp */; };
 		75F6B2882036A0E00091960A /* ComponentDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B2742036A0DF0091960A /* ComponentDriver.cpp */; };
@@ -35,6 +36,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7542EBC72037850D00B8C749 /* MapLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MapLoader.cpp; sourceTree = "<group>"; };
+		7542EBC82037850D00B8C749 /* MapLoader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MapLoader.hpp; sourceTree = "<group>"; };
 		756E180E2036CA0C000CE39F /* Region.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Region.cpp; sourceTree = "<group>"; };
 		756E180F2036CA0C000CE39F /* Region.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Region.hpp; sourceTree = "<group>"; };
 		7584E4B32036A69E004C37D3 /* MapDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MapDriver.cpp; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 				7584E4B32036A69E004C37D3 /* MapDriver.cpp */,
 				756E180E2036CA0C000CE39F /* Region.cpp */,
 				756E180F2036CA0C000CE39F /* Region.hpp */,
+				7542EBC72037850D00B8C749 /* MapLoader.cpp */,
+				7542EBC82037850D00B8C749 /* MapLoader.hpp */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				7584E4B42036A69E004C37D3 /* MapDriver.cpp in Sources */,
 				75F6B28E2036A0E00091960A /* Player.cpp in Sources */,
 				75F6B28B2036A0E00091960A /* Coins.cpp in Sources */,
+				7542EBC92037850D00B8C749 /* MapLoader.cpp in Sources */,
 				75F6B2922036A0E00091960A /* GamePieces.cpp in Sources */,
 				75F6B2912036A0E00091960A /* DiceDriver.cpp in Sources */,
 				756E18102036CA0C000CE39F /* Region.cpp in Sources */,
