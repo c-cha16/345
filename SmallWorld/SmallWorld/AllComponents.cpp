@@ -6,7 +6,7 @@
 //  Copyright © 2018 Charles Chan. All rights reserved.
 //
 
-#include "AllComponents.hpp"
+#include "AllComponents.h"
 #include <iostream>
 #include "Tokens.hpp"
 #include "RaceBanners.hpp"

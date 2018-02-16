@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:../Library/Autosave Information"
+      name = "SmallWorld">
+      <FileRef
+         location = "group:Badges.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:Badges.hpp">
+      </FileRef>
+      <FileRef
+         location = "group:AllComponents.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:../../345/SmallWorld/SmallWorld/AllComponents.hpp">
+      </FileRef>
+      <FileRef
+         location = "group:Coins.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:Coins.hpp">
+      </FileRef>
+      <FileRef
+         location = "group:ComponentDriver.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:Dice.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:Dice.hpp">
+      </FileRef>
+      <FileRef
+         location = "group:DiceDriver.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:GamePieces.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:GamePieces.hpp">
+      </FileRef>
+      <FileRef
+         location = "group:MapObjects.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:MapObjects.hpp">
+      </FileRef>
+      <FileRef
+         location = "group:Player.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:Player.hpp">
+      </FileRef>
+      <FileRef
+         location = "group:RaceBanners.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:RaceBanners.hpp">
+      </FileRef>
+      <FileRef
+         location = "group:Tokens.cpp">
+      </FileRef>
+      <FileRef
+         location = "group:Tokens.hpp">
+      </FileRef>
+   </Group>
+</Workspace>
