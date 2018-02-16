@@ -20,6 +20,8 @@
 		75F6B2902036A0E00091960A /* RaceBanners.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B2852036A0E00091960A /* RaceBanners.cpp */; };
 		75F6B2912036A0E00091960A /* DiceDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B2862036A0E00091960A /* DiceDriver.cpp */; };
 		75F6B2922036A0E00091960A /* GamePieces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B2872036A0E00091960A /* GamePieces.cpp */; };
+		A99055F7203794520087DC63 /* Edge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A99055F5203794520087DC63 /* Edge.cpp */; };
+		A9CB795E20377E5D00CA585C /* Maps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9CB795C20377E5D00CA585C /* Maps.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +61,10 @@
 		75F6B2862036A0E00091960A /* DiceDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DiceDriver.cpp; sourceTree = "<group>"; };
 		75F6B2872036A0E00091960A /* GamePieces.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamePieces.cpp; sourceTree = "<group>"; };
 		75F6B2932036A1730091960A /* AllComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllComponents.h; sourceTree = "<group>"; };
+		A99055F5203794520087DC63 /* Edge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Edge.cpp; sourceTree = "<group>"; };
+		A99055F6203794520087DC63 /* Edge.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Edge.hpp; sourceTree = "<group>"; };
+		A9CB795C20377E5D00CA585C /* Maps.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Maps.cpp; sourceTree = "<group>"; };
+		A9CB795D20377E5D00CA585C /* Maps.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Maps.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,10 @@
 				75F6B2762036A0DF0091960A /* Tokens.hpp */,
 				75F6B27F2036A0DF0091960A /* Player.cpp */,
 				75F6B2822036A0E00091960A /* Player.hpp */,
+				A9CB795C20377E5D00CA585C /* Maps.cpp */,
+				A9CB795D20377E5D00CA585C /* Maps.hpp */,
+				A99055F5203794520087DC63 /* Edge.cpp */,
+				A99055F6203794520087DC63 /* Edge.hpp */,
 				75F6B2792036A0DF0091960A /* Dice.cpp */,
 				75F6B27E2036A0DF0091960A /* Dice.hpp */,
 				75F6B2862036A0E00091960A /* DiceDriver.cpp */,
@@ -183,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9CB795E20377E5D00CA585C /* Maps.cpp in Sources */,
 				7584E4B42036A69E004C37D3 /* MapDriver.cpp in Sources */,
 				75F6B28E2036A0E00091960A /* Player.cpp in Sources */,
 				75F6B28B2036A0E00091960A /* Coins.cpp in Sources */,
@@ -191,6 +202,7 @@
 				756E18102036CA0C000CE39F /* Region.cpp in Sources */,
 				75F6B2892036A0E00091960A /* Tokens.cpp in Sources */,
 				75F6B28C2036A0E00091960A /* AllComponents.cpp in Sources */,
+				A99055F7203794520087DC63 /* Edge.cpp in Sources */,
 				75F6B28A2036A0E00091960A /* Dice.cpp in Sources */,
 				75F6B28F2036A0E00091960A /* Badges.cpp in Sources */,
 				75F6B2882036A0E00091960A /* ComponentDriver.cpp in Sources */,
