@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		756E18102036CA0C000CE39F /* Region.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 756E180E2036CA0C000CE39F /* Region.cpp */; };
 		7584E4B42036A69E004C37D3 /* MapDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7584E4B32036A69E004C37D3 /* MapDriver.cpp */; };
 		75F6B2882036A0E00091960A /* ComponentDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B2742036A0DF0091960A /* ComponentDriver.cpp */; };
 		75F6B2892036A0E00091960A /* Tokens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B2752036A0DF0091960A /* Tokens.cpp */; };
@@ -34,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		756E180E2036CA0C000CE39F /* Region.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Region.cpp; sourceTree = "<group>"; };
+		756E180F2036CA0C000CE39F /* Region.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Region.hpp; sourceTree = "<group>"; };
 		7584E4B32036A69E004C37D3 /* MapDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MapDriver.cpp; sourceTree = "<group>"; };
 		75F6B26A2036A0CB0091960A /* SmallWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SmallWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F6B2742036A0DF0091960A /* ComponentDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentDriver.cpp; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				7584E4B32036A69E004C37D3 /* MapDriver.cpp */,
+				756E180E2036CA0C000CE39F /* Region.cpp */,
+				756E180F2036CA0C000CE39F /* Region.hpp */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 				75F6B28B2036A0E00091960A /* Coins.cpp in Sources */,
 				75F6B2922036A0E00091960A /* GamePieces.cpp in Sources */,
 				75F6B2912036A0E00091960A /* DiceDriver.cpp in Sources */,
+				756E18102036CA0C000CE39F /* Region.cpp in Sources */,
 				75F6B2892036A0E00091960A /* Tokens.cpp in Sources */,
 				75F6B28C2036A0E00091960A /* AllComponents.cpp in Sources */,
 				75F6B28A2036A0E00091960A /* Dice.cpp in Sources */,
