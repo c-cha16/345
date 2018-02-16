@@ -12,9 +12,10 @@ Player::Player(){
     iD++;
 }
 Player::~Player(){
-    delete race;
+    //???
+    //delete race;
     race = nullptr;
-    delete power;
+    //delete power;
     power = nullptr;
     delete availTokens;
     availTokens = nullptr;

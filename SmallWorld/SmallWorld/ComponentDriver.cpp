@@ -46,6 +46,10 @@ int main(int argc, const char * argv[]) {
     p1->showSheet();
     p2->showSheet();
     
+    delete b1;
+    b1 = nullptr;
+    delete b2;
+    b2 = nullptr;
     delete p1;
     p1 = nullptr;
     delete p2;

@@ -12,7 +12,10 @@
 #include "Tokens.hpp"
 #include "Badges.hpp"
 #include "RaceBanners.hpp"
+#include "Region.hpp"
 #include <stdio.h>
+#include <vector>
+
 using namespace std;
 
 class Player {
@@ -32,7 +35,7 @@ private:
     Tokens* availTokens;
     Badges* power;
     RaceBanners* race;
-    
+    vector <Region> regions;
 };
 
 #endif /* Player_hpp */
