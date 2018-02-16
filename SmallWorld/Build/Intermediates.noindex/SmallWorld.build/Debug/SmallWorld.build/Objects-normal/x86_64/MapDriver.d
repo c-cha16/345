@@ -1,5 +1,6 @@
 dependencies: \
   /Users/charleschan/345/SmallWorld/SmallWorld/Map/MapDriver.cpp \
+  /Users/charleschan/345/SmallWorld/SmallWorld/Map/Region.hpp \
   /opt/local/include/boost/config.hpp \
   /opt/local/include/boost/config/user.hpp \
   /opt/local/include/boost/config/detail/select_compiler_config.hpp \
@@ -1127,4 +1128,14 @@ dependencies: \
   /opt/local/include/boost/range/algorithm_ext/is_sorted.hpp \
   /opt/local/include/boost/detail/is_sorted.hpp \
   /opt/local/include/boost/range/algorithm_ext/iota.hpp \
-  /opt/local/include/boost/graph/iteration_macros.hpp
+  /opt/local/include/boost/graph/iteration_macros.hpp \
+  /opt/local/include/boost/graph/undirected_graph.hpp \
+  /opt/local/include/boost/property_map/transform_value_property_map.hpp \
+  /opt/local/include/boost/graph/graph_as_tree.hpp \
+  /opt/local/include/boost/graph/tree_traits.hpp \
+  /opt/local/include/boost/graph/breadth_first_search.hpp \
+  /opt/local/include/boost/pending/queue.hpp \
+  /opt/local/include/boost/graph/overloading.hpp \
+  /opt/local/include/boost/graph/two_bit_color_map.hpp \
+  /opt/local/include/boost/graph/vertex_and_edge_range.hpp \
+  /opt/local/include/boost/graph/graph_archetypes.hpp
