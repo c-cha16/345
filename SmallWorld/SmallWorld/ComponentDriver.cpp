@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include "AllComponents.hpp"
+#include "AllComponents.h"
 
 using namespace std;
 

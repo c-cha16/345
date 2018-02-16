@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		75982DEA20340FB60012ABC2 /* Tokens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75982DE820340FB60012ABC2 /* Tokens.cpp */; };
-		75982DED20340FC70012ABC2 /* RaceBanners.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75982DEB20340FC70012ABC2 /* RaceBanners.cpp */; };
-		75982DF0203415EB0012ABC2 /* Coins.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75982DEE203415EB0012ABC2 /* Coins.cpp */; };
-		75982DF3203416440012ABC2 /* Badges.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75982DF1203416440012ABC2 /* Badges.cpp */; };
-		75982DF62034165D0012ABC2 /* GamePieces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75982DF42034165D0012ABC2 /* GamePieces.cpp */; };
-		75982DF9203417C50012ABC2 /* AllComponents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75982DF7203417C50012ABC2 /* AllComponents.cpp */; };
-		75982DFC2034EDFA0012ABC2 /* MapObjects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75982DFA2034EDFA0012ABC2 /* MapObjects.cpp */; };
-		75A966D7202BEA1A00A3E8CA /* ComponentDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A966D6202BEA1A00A3E8CA /* ComponentDriver.cpp */; };
-		75A966DF202BEA7200A3E8CA /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A966DD202BEA7200A3E8CA /* Player.cpp */; };
-		75BA79EF203698BC0070125C /* Dice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75BA79ED203698BC0070125C /* Dice.cpp */; };
-		75BA79F120369A590070125C /* DiceDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75BA79F020369A590070125C /* DiceDriver.cpp */; };
+		75F6B2882036A0E00091960A /* ComponentDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B2742036A0DF0091960A /* ComponentDriver.cpp */; };
+		75F6B2892036A0E00091960A /* Tokens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B2752036A0DF0091960A /* Tokens.cpp */; };
+		75F6B28A2036A0E00091960A /* Dice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B2792036A0DF0091960A /* Dice.cpp */; };
+		75F6B28B2036A0E00091960A /* Coins.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B27A2036A0DF0091960A /* Coins.cpp */; };
+		75F6B28C2036A0E00091960A /* AllComponents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B27B2036A0DF0091960A /* AllComponents.cpp */; };
+		75F6B28D2036A0E00091960A /* MapObjects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B27C2036A0DF0091960A /* MapObjects.cpp */; };
+		75F6B28E2036A0E00091960A /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B27F2036A0DF0091960A /* Player.cpp */; };
+		75F6B28F2036A0E00091960A /* Badges.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B2832036A0E00091960A /* Badges.cpp */; };
+		75F6B2902036A0E00091960A /* RaceBanners.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B2852036A0E00091960A /* RaceBanners.cpp */; };
+		75F6B2912036A0E00091960A /* DiceDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B2862036A0E00091960A /* DiceDriver.cpp */; };
+		75F6B2922036A0E00091960A /* GamePieces.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B2872036A0E00091960A /* GamePieces.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		75A966D1202BEA1A00A3E8CA /* CopyFiles */ = {
+		75F6B2682036A0CB0091960A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -33,36 +33,31 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
-		75A2893E20369353001A2D4F /* SmallWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = SmallWorld; path = /Users/charleschan/345/SmallWorld/build/Debug/SmallWorld; sourceTree = "<absolute>"; };
-		75A966D6202BEA1A00A3E8CA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-=======
-		75982DE820340FB60012ABC2 /* Tokens.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tokens.cpp; sourceTree = "<group>"; };
-		75982DE920340FB60012ABC2 /* Tokens.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tokens.hpp; sourceTree = "<group>"; };
-		75982DEB20340FC70012ABC2 /* RaceBanners.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RaceBanners.cpp; sourceTree = "<group>"; };
-		75982DEC20340FC70012ABC2 /* RaceBanners.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RaceBanners.hpp; sourceTree = "<group>"; };
-		75982DEE203415EB0012ABC2 /* Coins.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Coins.cpp; sourceTree = "<group>"; };
-		75982DEF203415EB0012ABC2 /* Coins.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Coins.hpp; sourceTree = "<group>"; };
-		75982DF1203416440012ABC2 /* Badges.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Badges.cpp; sourceTree = "<group>"; };
-		75982DF2203416440012ABC2 /* Badges.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Badges.hpp; sourceTree = "<group>"; };
-		75982DF42034165D0012ABC2 /* GamePieces.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GamePieces.cpp; sourceTree = "<group>"; };
-		75982DF52034165D0012ABC2 /* GamePieces.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GamePieces.hpp; sourceTree = "<group>"; };
-		75982DF7203417C50012ABC2 /* AllComponents.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AllComponents.cpp; sourceTree = "<group>"; };
-		75982DF8203417C50012ABC2 /* AllComponents.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AllComponents.hpp; sourceTree = "<group>"; };
-		75982DFA2034EDFA0012ABC2 /* MapObjects.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MapObjects.cpp; sourceTree = "<group>"; };
-		75982DFB2034EDFA0012ABC2 /* MapObjects.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MapObjects.hpp; sourceTree = "<group>"; };
-		75A966D3202BEA1A00A3E8CA /* SmallWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SmallWorld; sourceTree = BUILT_PRODUCTS_DIR; };
-		75A966D6202BEA1A00A3E8CA /* ComponentDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentDriver.cpp; sourceTree = "<group>"; };
->>>>>>> d1c64ad99fa466eca0e2275d655dfa17c8ddb6ff
-		75A966DD202BEA7200A3E8CA /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
-		75A966DE202BEA7200A3E8CA /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
-		75BA79ED203698BC0070125C /* Dice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dice.cpp; sourceTree = "<group>"; };
-		75BA79EE203698BC0070125C /* Dice.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Dice.hpp; sourceTree = "<group>"; };
-		75BA79F020369A590070125C /* DiceDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DiceDriver.cpp; sourceTree = "<group>"; };
+		75F6B26A2036A0CB0091960A /* SmallWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SmallWorld; sourceTree = BUILT_PRODUCTS_DIR; };
+		75F6B2742036A0DF0091960A /* ComponentDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentDriver.cpp; sourceTree = "<group>"; };
+		75F6B2752036A0DF0091960A /* Tokens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tokens.cpp; sourceTree = "<group>"; };
+		75F6B2762036A0DF0091960A /* Tokens.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Tokens.hpp; sourceTree = "<group>"; };
+		75F6B2782036A0DF0091960A /* GamePieces.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GamePieces.hpp; sourceTree = "<group>"; };
+		75F6B2792036A0DF0091960A /* Dice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dice.cpp; sourceTree = "<group>"; };
+		75F6B27A2036A0DF0091960A /* Coins.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Coins.cpp; sourceTree = "<group>"; };
+		75F6B27B2036A0DF0091960A /* AllComponents.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AllComponents.cpp; sourceTree = "<group>"; };
+		75F6B27C2036A0DF0091960A /* MapObjects.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapObjects.cpp; sourceTree = "<group>"; };
+		75F6B27D2036A0DF0091960A /* MapObjects.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MapObjects.hpp; sourceTree = "<group>"; };
+		75F6B27E2036A0DF0091960A /* Dice.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Dice.hpp; sourceTree = "<group>"; };
+		75F6B27F2036A0DF0091960A /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		75F6B2802036A0E00091960A /* Coins.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Coins.hpp; sourceTree = "<group>"; };
+		75F6B2812036A0E00091960A /* RaceBanners.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RaceBanners.hpp; sourceTree = "<group>"; };
+		75F6B2822036A0E00091960A /* Player.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+		75F6B2832036A0E00091960A /* Badges.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Badges.cpp; sourceTree = "<group>"; };
+		75F6B2842036A0E00091960A /* Badges.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Badges.hpp; sourceTree = "<group>"; };
+		75F6B2852036A0E00091960A /* RaceBanners.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RaceBanners.cpp; sourceTree = "<group>"; };
+		75F6B2862036A0E00091960A /* DiceDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DiceDriver.cpp; sourceTree = "<group>"; };
+		75F6B2872036A0E00091960A /* GamePieces.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GamePieces.cpp; sourceTree = "<group>"; };
+		75F6B2932036A1730091960A /* AllComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllComponents.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		75A966D0202BEA1A00A3E8CA /* Frameworks */ = {
+		75F6B2672036A0CB0091960A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,36 +67,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		75A966CA202BEA1A00A3E8CA = {
+		75F6B2612036A0CB0091960A = {
 			isa = PBXGroup;
 			children = (
-				75A966D5202BEA1A00A3E8CA /* SmallWorld */,
+				75F6B26C2036A0CB0091960A /* SmallWorld */,
+				75F6B26B2036A0CB0091960A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		75A966D5202BEA1A00A3E8CA /* SmallWorld */ = {
+		75F6B26B2036A0CB0091960A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75A966D6202BEA1A00A3E8CA /* ComponentDriver.cpp */,
-				75982DF7203417C50012ABC2 /* AllComponents.cpp */,
-				75982DF8203417C50012ABC2 /* AllComponents.hpp */,
-				75982DEE203415EB0012ABC2 /* Coins.cpp */,
-				75982DEF203415EB0012ABC2 /* Coins.hpp */,
-				75982DEB20340FC70012ABC2 /* RaceBanners.cpp */,
-				75982DEC20340FC70012ABC2 /* RaceBanners.hpp */,
-				75982DF1203416440012ABC2 /* Badges.cpp */,
-				75982DF2203416440012ABC2 /* Badges.hpp */,
-				75982DE820340FB60012ABC2 /* Tokens.cpp */,
-				75982DE920340FB60012ABC2 /* Tokens.hpp */,
-				75982DF42034165D0012ABC2 /* GamePieces.cpp */,
-				75982DF52034165D0012ABC2 /* GamePieces.hpp */,
-				75982DFA2034EDFA0012ABC2 /* MapObjects.cpp */,
-				75982DFB2034EDFA0012ABC2 /* MapObjects.hpp */,
-				75A966DE202BEA7200A3E8CA /* Player.hpp */,
-				75A966DD202BEA7200A3E8CA /* Player.cpp */,
-				75BA79ED203698BC0070125C /* Dice.cpp */,
-				75BA79EE203698BC0070125C /* Dice.hpp */,
-				75BA79F020369A590070125C /* DiceDriver.cpp */,
+				75F6B26A2036A0CB0091960A /* SmallWorld */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75F6B26C2036A0CB0091960A /* SmallWorld */ = {
+			isa = PBXGroup;
+			children = (
+				75F6B2742036A0DF0091960A /* ComponentDriver.cpp */,
+				75F6B27B2036A0DF0091960A /* AllComponents.cpp */,
+				75F6B2932036A1730091960A /* AllComponents.h */,
+				75F6B2832036A0E00091960A /* Badges.cpp */,
+				75F6B2842036A0E00091960A /* Badges.hpp */,
+				75F6B27A2036A0DF0091960A /* Coins.cpp */,
+				75F6B2802036A0E00091960A /* Coins.hpp */,
+				75F6B2872036A0E00091960A /* GamePieces.cpp */,
+				75F6B2782036A0DF0091960A /* GamePieces.hpp */,
+				75F6B27C2036A0DF0091960A /* MapObjects.cpp */,
+				75F6B27D2036A0DF0091960A /* MapObjects.hpp */,
+				75F6B27F2036A0DF0091960A /* Player.cpp */,
+				75F6B2822036A0E00091960A /* Player.hpp */,
+				75F6B2852036A0E00091960A /* RaceBanners.cpp */,
+				75F6B2812036A0E00091960A /* RaceBanners.hpp */,
+				75F6B2752036A0DF0091960A /* Tokens.cpp */,
+				75F6B2762036A0DF0091960A /* Tokens.hpp */,
+				75F6B2792036A0DF0091960A /* Dice.cpp */,
+				75F6B27E2036A0DF0091960A /* Dice.hpp */,
+				75F6B2862036A0E00091960A /* DiceDriver.cpp */,
 			);
 			path = SmallWorld;
 			sourceTree = "<group>";
@@ -109,13 +113,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		75A966D2202BEA1A00A3E8CA /* SmallWorld */ = {
+		75F6B2692036A0CB0091960A /* SmallWorld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75A966DA202BEA1A00A3E8CA /* Build configuration list for PBXNativeTarget "SmallWorld" */;
+			buildConfigurationList = 75F6B2712036A0CB0091960A /* Build configuration list for PBXNativeTarget "SmallWorld" */;
 			buildPhases = (
-				75A966CF202BEA1A00A3E8CA /* Sources */,
-				75A966D0202BEA1A00A3E8CA /* Frameworks */,
-				75A966D1202BEA1A00A3E8CA /* CopyFiles */,
+				75F6B2662036A0CB0091960A /* Sources */,
+				75F6B2672036A0CB0091960A /* Frameworks */,
+				75F6B2682036A0CB0091960A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -123,64 +127,64 @@
 			);
 			name = SmallWorld;
 			productName = SmallWorld;
-			productReference = 75A2893E20369353001A2D4F /* SmallWorld */;
+			productReference = 75F6B26A2036A0CB0091960A /* SmallWorld */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		75A966CB202BEA1A00A3E8CA /* Project object */ = {
+		75F6B2622036A0CB0091960A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Charles Chan";
 				TargetAttributes = {
-					75A966D2202BEA1A00A3E8CA = {
+					75F6B2692036A0CB0091960A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 75A966CE202BEA1A00A3E8CA /* Build configuration list for PBXProject "SmallWorld" */;
+			buildConfigurationList = 75F6B2652036A0CB0091960A /* Build configuration list for PBXProject "SmallWorld" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 75A966CA202BEA1A00A3E8CA;
-			productRefGroup = 75A966CA202BEA1A00A3E8CA;
+			mainGroup = 75F6B2612036A0CB0091960A;
+			productRefGroup = 75F6B26B2036A0CB0091960A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				75A966D2202BEA1A00A3E8CA /* SmallWorld */,
+				75F6B2692036A0CB0091960A /* SmallWorld */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		75A966CF202BEA1A00A3E8CA /* Sources */ = {
+		75F6B2662036A0CB0091960A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75982DF0203415EB0012ABC2 /* Coins.cpp in Sources */,
-				75982DF9203417C50012ABC2 /* AllComponents.cpp in Sources */,
-				75BA79F120369A590070125C /* DiceDriver.cpp in Sources */,
-				75982DED20340FC70012ABC2 /* RaceBanners.cpp in Sources */,
-				75982DEA20340FB60012ABC2 /* Tokens.cpp in Sources */,
-				75BA79EF203698BC0070125C /* Dice.cpp in Sources */,
-				75982DF3203416440012ABC2 /* Badges.cpp in Sources */,
-				75A966DF202BEA7200A3E8CA /* Player.cpp in Sources */,
-				75982DF62034165D0012ABC2 /* GamePieces.cpp in Sources */,
-				75982DFC2034EDFA0012ABC2 /* MapObjects.cpp in Sources */,
-				75A966D7202BEA1A00A3E8CA /* ComponentDriver.cpp in Sources */,
+				75F6B28E2036A0E00091960A /* Player.cpp in Sources */,
+				75F6B28B2036A0E00091960A /* Coins.cpp in Sources */,
+				75F6B2922036A0E00091960A /* GamePieces.cpp in Sources */,
+				75F6B2912036A0E00091960A /* DiceDriver.cpp in Sources */,
+				75F6B2892036A0E00091960A /* Tokens.cpp in Sources */,
+				75F6B28C2036A0E00091960A /* AllComponents.cpp in Sources */,
+				75F6B28A2036A0E00091960A /* Dice.cpp in Sources */,
+				75F6B28F2036A0E00091960A /* Badges.cpp in Sources */,
+				75F6B2882036A0E00091960A /* ComponentDriver.cpp in Sources */,
+				75F6B2902036A0E00091960A /* RaceBanners.cpp in Sources */,
+				75F6B28D2036A0E00091960A /* MapObjects.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		75A966D8202BEA1A00A3E8CA /* Debug */ = {
+		75F6B26F2036A0CB0091960A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -235,7 +239,7 @@
 			};
 			name = Debug;
 		};
-		75A966D9202BEA1A00A3E8CA /* Release */ = {
+		75F6B2702036A0CB0091960A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -283,7 +287,7 @@
 			};
 			name = Release;
 		};
-		75A966DB202BEA1A00A3E8CA /* Debug */ = {
+		75F6B2722036A0CB0091960A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -291,7 +295,7 @@
 			};
 			name = Debug;
 		};
-		75A966DC202BEA1A00A3E8CA /* Release */ = {
+		75F6B2732036A0CB0091960A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -302,25 +306,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		75A966CE202BEA1A00A3E8CA /* Build configuration list for PBXProject "SmallWorld" */ = {
+		75F6B2652036A0CB0091960A /* Build configuration list for PBXProject "SmallWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75A966D8202BEA1A00A3E8CA /* Debug */,
-				75A966D9202BEA1A00A3E8CA /* Release */,
+				75F6B26F2036A0CB0091960A /* Debug */,
+				75F6B2702036A0CB0091960A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75A966DA202BEA1A00A3E8CA /* Build configuration list for PBXNativeTarget "SmallWorld" */ = {
+		75F6B2712036A0CB0091960A /* Build configuration list for PBXNativeTarget "SmallWorld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75A966DB202BEA1A00A3E8CA /* Debug */,
-				75A966DC202BEA1A00A3E8CA /* Release */,
+				75F6B2722036A0CB0091960A /* Debug */,
+				75F6B2732036A0CB0091960A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 75A966CB202BEA1A00A3E8CA /* Project object */;
+	rootObject = 75F6B2622036A0CB0091960A /* Project object */;
 }

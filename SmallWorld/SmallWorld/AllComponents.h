@@ -1,13 +1,13 @@
 //
-//  AllComponents.hpp
+//  AllComponents.h
 //  SmallWorld
 //
-//  Created by Charles  Chan on 2018-02-14.
+//  Created by Charles  Chan on 2018-02-16.
 //  Copyright © 2018 Charles Chan. All rights reserved.
 //
 
-#ifndef AllComponents_hpp
-#define AllComponents_hpp
+#ifndef AllComponents_h
+#define AllComponents_h
 #include "Coins.hpp"
 #include "RaceBanners.hpp"
 #include <stdio.h>
@@ -45,4 +45,5 @@ private:
     
 };
 
-#endif /* AllComponents_hpp */
+
+#endif /* AllComponents_h */
