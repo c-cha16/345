@@ -17,7 +17,7 @@ Player::~Player(){
     race = nullptr;
     //delete power;
     power = nullptr;
-    delete availTokens;
+    //delete availTokens;
     availTokens = nullptr;
     //delete dice;
     dice = nullptr;
