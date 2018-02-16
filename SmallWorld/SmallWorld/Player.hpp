@@ -12,7 +12,10 @@
 #include "Tokens.hpp"
 #include "Badges.hpp"
 #include "RaceBanners.hpp"
+#include "Region.hpp"
 #include <stdio.h>
+#include <vector>
+
 using namespace std;
 
 class Player {
@@ -26,13 +29,15 @@ public:
     void setRace(RaceBanners rb){ race = &rb;}
     void showSheet();
     
+    void addRegion(Region r);
+    
 private:
     //regions
     //use vectors
     Tokens* availTokens;
     Badges* power;
     RaceBanners* race;
-    
+    vector <Region> regions;
 };
 
 #endif /* Player_hpp */

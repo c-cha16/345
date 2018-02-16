@@ -9,6 +9,7 @@
 #include <iostream>
 #include "AllComponents.h"
 #include "Player.hpp"
+#include "Region.hpp"
 
 using namespace std;
 
@@ -36,16 +37,27 @@ int main(int argc, const char * argv[]) {
     RaceBanners* rb1 = new RaceBanners("Humans", 5, "FarmLand Region");
     Badges* b2 = new Badges("Beserk", 4, "Use renforcement die");
     RaceBanners* rb2 = new RaceBanners("Dwarves", 3, "Mining Region");
-    
+    Region* r1 = new Region(5,"Forest");
+    Region* r2 = new Region(3, "Plains");
     Player* p1 = new Player();
     Player* p2 = new Player();
     p1->setBadge(*b1);
     p1->setRace(*rb1);
     p2->setBadge(*b2);
     p2->setRace(*rb2);
+    p1->addRegion(*r1);
+    p1->addRegion(*r2);
+    p1->addRegion(*r2);
+    p1->addRegion(*r2);
+    p1->addRegion(*r1);
+    p1->addRegion(*r1);
     p1->showSheet();
     p2->showSheet();
     
+    delete b1;
+    b1 = nullptr;
+    delete b2;
+    b2 = nullptr;
     delete p1;
     p1 = nullptr;
     delete p2;

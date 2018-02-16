@@ -12,9 +12,10 @@ Player::Player(){
     iD++;
 }
 Player::~Player(){
-    delete race;
+    //???
+    //delete race;
     race = nullptr;
-    delete power;
+    //delete power;
     power = nullptr;
     delete availTokens;
     availTokens = nullptr;
@@ -28,7 +29,9 @@ void Player::conquers(){
 void Player::scores(){
     cout << "scores";
 }
-
+void Player::addRegion(Region r){
+    regions.push_back(r);
+}
 void Player::showSheet(){
     
     cout << "Player " << iD << ": " << race->getRace() << endl;
