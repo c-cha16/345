@@ -8,7 +8,10 @@
 
 #ifndef Player_hpp
 #define Player_hpp
-
+//include regions
+#include "Tokens.hpp"
+#include "Badges.hpp"
+#include "RaceBanners.hpp"
 #include <stdio.h>
 using namespace std;
 
@@ -19,8 +22,16 @@ public:
     void scores();
     Player();
     ~Player();
+    void setBadge(Badges b){power = &b;}
+    void setRace(RaceBanners rb){ race = &rb;}
+    void showSheet();
     
 private:
+    //regions
+    //use vectors
+    Tokens* availTokens;
+    Badges* power;
+    RaceBanners* race;
     
 };
 

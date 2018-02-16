@@ -6,4 +6,5 @@ dependencies: \
   /Users/charleschan/345/SmallWorld/SmallWorld/Badges.hpp \
   /Users/charleschan/345/SmallWorld/SmallWorld/Tokens.hpp \
   /Users/charleschan/345/SmallWorld/SmallWorld/MapObjects.hpp \
-  /Users/charleschan/345/SmallWorld/SmallWorld/GamePieces.hpp
+  /Users/charleschan/345/SmallWorld/SmallWorld/GamePieces.hpp \
+  /Users/charleschan/345/SmallWorld/SmallWorld/Player.hpp

@@ -16,6 +16,7 @@ using namespace std;
 class RaceBanners{
 public:
     RaceBanners();
+    RaceBanners(RaceBanners const &rb);
     RaceBanners(string s, int n, string ski);
     ~RaceBanners();
     string getRace(){ return race;}
@@ -25,6 +26,7 @@ public:
     void setActive(){active = true;}
     void setDecline(){active = false;}
     void useSkill();
+    string getSkill(){ return skill;}
     void setSkill(string s){ skill = s;}
 private:
     string race;
