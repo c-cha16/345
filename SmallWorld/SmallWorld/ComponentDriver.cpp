@@ -40,8 +40,8 @@ int main(int argc, const char * argv[]) {
     RaceBanners* rb2 = new RaceBanners("Dwarves", 3, "Mining Region");
     Region* r1 = new Region(5,"Forest");
     Region* r2 = new Region(3, "Plains");
-    Player* p1 = new Player();
-    Player* p2 = new Player();
+    Player* p1 = new Player(1);
+    Player* p2 = new Player(2);
     p1->setBadge(*b1);
     p1->setRace(*rb1);
     p2->setBadge(*b2);
