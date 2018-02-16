@@ -147,9 +147,19 @@ void AllComponents::showBanners(){
 
 void AllComponents::createBadges(){
     //similiar to above
+    for (int i = 0; i<20; i++) {
+        badgeHolder[i].setSkill("Power #" + to_string(i));
+        badgeHolder[i].setMaxToken(rand()%4 +1);
+        badgeHolder[i].setName("Badge #" + to_string(i));
+    }
 }
 void AllComponents::showBadges(){
     //similiar to above
+    for (int i = 0; i<20; i++) {
+        cout << badgeHolder[i].getName() << endl;
+        cout << "Token amount: " << badgeHolder[i].getMaxToken() <<endl;
+        cout << badgeHolder[i].getSkill() << endl <<endl;
+    }
 }
 
 void AllComponents::createTokens(){

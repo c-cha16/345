@@ -29,8 +29,8 @@ int main(int argc, const char * argv[]) {
     ac->showGamePieces();
     cout << "=======================" <<endl;
     //add Badges
-    
-    
+    ac->createBadges();
+    ac->showBadges();
     cout << "=======================" <<endl;
     delete ac;
     ac = nullptr;
