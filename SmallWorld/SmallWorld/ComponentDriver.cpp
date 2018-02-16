@@ -9,6 +9,8 @@
 #include <iostream>
 #include "AllComponents.h"
 #include "Player.hpp"
+#include "Region.hpp"
+#include "Dice.hpp"
 
 using namespace std;
 
@@ -36,19 +38,43 @@ int main(int argc, const char * argv[]) {
     RaceBanners* rb1 = new RaceBanners("Humans", 5, "FarmLand Region");
     Badges* b2 = new Badges("Beserk", 4, "Use renforcement die");
     RaceBanners* rb2 = new RaceBanners("Dwarves", 3, "Mining Region");
-    
-    Player* p1 = new Player();
-    Player* p2 = new Player();
+    Region* r1 = new Region(5,"Forest");
+    Region* r2 = new Region(3, "Plains");
+    Player* p1 = new Player(1);
+    Player* p2 = new Player(2);
     p1->setBadge(*b1);
     p1->setRace(*rb1);
     p2->setBadge(*b2);
     p2->setRace(*rb2);
+    p1->addRegion(*r1);
+    p1->addRegion(*r2);
+    p1->addRegion(*r2);
+    p1->addRegion(*r2);
+    p1->addRegion(*r1);
+    p1->addRegion(*r1);
     p1->showSheet();
     p2->showSheet();
     
+    Dice* d1 = new Dice();
+    Dice* d2 = new Dice();
+    p1->addDice(*d1);
+    p2->addDice(*d2);
+    p1->roll(35, 2);
+    p2->roll(30, 1);
+    
+    delete b1;
+    b1 = nullptr;
+    delete b2;
+    b2 = nullptr;
     delete p1;
     p1 = nullptr;
     delete p2;
     p2 = nullptr;
+    delete d1;
+    d1 =nullptr;
+    delete d2;
+    d2 =nullptr;
+    
     return 0;
 }
+

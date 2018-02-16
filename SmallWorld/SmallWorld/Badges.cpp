@@ -18,5 +18,4 @@ Badges::Badges(string s, int n, string ski){
     skill = ski;
 }
 Badges::~Badges(){
-    
 }
