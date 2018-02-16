@@ -8,8 +8,8 @@
 #include <iostream>
 #include "Player.hpp"
 int iD = 0;
-Player::Player(){
-    iD++;
+Player::Player(int i){
+    setID(i);
 }
 Player::~Player(){
     //???
