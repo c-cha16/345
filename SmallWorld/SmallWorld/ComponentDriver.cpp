@@ -12,7 +12,7 @@
 #include "Region.hpp"
 
 using namespace std;
-
+/*
 int main(int argc, const char * argv[]) {
     AllComponents* ac = new AllComponents();
     
@@ -64,3 +64,4 @@ int main(int argc, const char * argv[]) {
     p2 = nullptr;
     return 0;
 }
+*/
