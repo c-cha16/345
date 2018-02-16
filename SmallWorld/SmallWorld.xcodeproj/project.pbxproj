@@ -24,7 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		75A966D3202BEA1A00A3E8CA /* SmallWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SmallWorld; sourceTree = BUILT_PRODUCTS_DIR; };
+		75A2893E20369353001A2D4F /* SmallWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = SmallWorld; path = /Users/charleschan/345/SmallWorld/build/Debug/SmallWorld; sourceTree = "<absolute>"; };
 		75A966D6202BEA1A00A3E8CA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		75A966DD202BEA7200A3E8CA /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		75A966DE202BEA7200A3E8CA /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
@@ -45,16 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				75A966D5202BEA1A00A3E8CA /* SmallWorld */,
-				75A966D4202BEA1A00A3E8CA /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		75A966D4202BEA1A00A3E8CA /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				75A966D3202BEA1A00A3E8CA /* SmallWorld */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		75A966D5202BEA1A00A3E8CA /* SmallWorld */ = {
@@ -84,7 +75,7 @@
 			);
 			name = SmallWorld;
 			productName = SmallWorld;
-			productReference = 75A966D3202BEA1A00A3E8CA /* SmallWorld */;
+			productReference = 75A2893E20369353001A2D4F /* SmallWorld */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +101,7 @@
 				en,
 			);
 			mainGroup = 75A966CA202BEA1A00A3E8CA;
-			productRefGroup = 75A966D4202BEA1A00A3E8CA /* Products */;
+			productRefGroup = 75A966CA202BEA1A00A3E8CA;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
