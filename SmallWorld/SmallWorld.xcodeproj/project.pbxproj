@@ -16,6 +16,8 @@
 		75982DFC2034EDFA0012ABC2 /* MapObjects.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75982DFA2034EDFA0012ABC2 /* MapObjects.cpp */; };
 		75A966D7202BEA1A00A3E8CA /* ComponentDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A966D6202BEA1A00A3E8CA /* ComponentDriver.cpp */; };
 		75A966DF202BEA7200A3E8CA /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75A966DD202BEA7200A3E8CA /* Player.cpp */; };
+		75BA79EF203698BC0070125C /* Dice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75BA79ED203698BC0070125C /* Dice.cpp */; };
+		75BA79F120369A590070125C /* DiceDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75BA79F020369A590070125C /* DiceDriver.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +51,9 @@
 		75A966D6202BEA1A00A3E8CA /* ComponentDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentDriver.cpp; sourceTree = "<group>"; };
 		75A966DD202BEA7200A3E8CA /* Player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
 		75A966DE202BEA7200A3E8CA /* Player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+		75BA79ED203698BC0070125C /* Dice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dice.cpp; sourceTree = "<group>"; };
+		75BA79EE203698BC0070125C /* Dice.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Dice.hpp; sourceTree = "<group>"; };
+		75BA79F020369A590070125C /* DiceDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DiceDriver.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +103,9 @@
 				75982DFB2034EDFA0012ABC2 /* MapObjects.hpp */,
 				75A966DE202BEA7200A3E8CA /* Player.hpp */,
 				75A966DD202BEA7200A3E8CA /* Player.cpp */,
+				75BA79ED203698BC0070125C /* Dice.cpp */,
+				75BA79EE203698BC0070125C /* Dice.hpp */,
+				75BA79F020369A590070125C /* DiceDriver.cpp */,
 			);
 			path = SmallWorld;
 			sourceTree = "<group>";
@@ -161,8 +169,10 @@
 			files = (
 				75982DF0203415EB0012ABC2 /* Coins.cpp in Sources */,
 				75982DF9203417C50012ABC2 /* AllComponents.cpp in Sources */,
+				75BA79F120369A590070125C /* DiceDriver.cpp in Sources */,
 				75982DED20340FC70012ABC2 /* RaceBanners.cpp in Sources */,
 				75982DEA20340FB60012ABC2 /* Tokens.cpp in Sources */,
+				75BA79EF203698BC0070125C /* Dice.cpp in Sources */,
 				75982DF3203416440012ABC2 /* Badges.cpp in Sources */,
 				75A966DF202BEA7200A3E8CA /* Player.cpp in Sources */,
 				75982DF62034165D0012ABC2 /* GamePieces.cpp in Sources */,
