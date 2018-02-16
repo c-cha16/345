@@ -12,7 +12,12 @@ Player::Player(){
     iD++;
 }
 Player::~Player(){
-    
+    delete race;
+    race = nullptr;
+    delete power;
+    power = nullptr;
+    delete availTokens;
+    availTokens = nullptr;
 }
 void Player::picks_race(){
     cout << "picked race";

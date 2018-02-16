@@ -25,22 +25,22 @@ public:
     
     void createBanners();
     void showBanners();
-    //not done
-    void createBadges();
-    void showBadges();
-    
+
     void createTokens();
     void showTokens();
     
     void createGamePieces();
     void showGamePieces();
+    //not done
+    void createBadges();
+    void showBadges();
 private:
     //done
     Coins* bank;
     RaceBanners* raceHolder;
-    //not done
     Tokens* tokenHolder;
     GamePieces* pieceHolder;
+    //not done
     Badges* badgeHolder;
     
 };
