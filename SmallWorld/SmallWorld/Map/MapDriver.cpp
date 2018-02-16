@@ -22,15 +22,14 @@ using namespace std;
 #include <boost/graph/vertex_and_edge_range.hpp>
 #include <boost/graph/graph_archetypes.hpp>
 
-
+/*
 int main(){
     using namespace boost;
     struct first_name_t {
         typedef vertex_property_tag kind;
     };
     typedef property<first_name_t, std::string> FirstNameProperty;
-    typedef adjacency_list<vecS, vecS, UdirectedS,
-    FirstNameProperty> MyGraphType;
+    typedef adjacency_list<vecS, vecS, UndirectedS, FirstNameProperty> MyGraphType;
     
     typedef pair<int,int> Pair;
     Pair edge_array[11] = { Pair(0,1), Pair(0,2), Pair(0,3),
@@ -73,4 +72,4 @@ int main(){
         cout << endl;
     return 0;
 }
-
+*/
