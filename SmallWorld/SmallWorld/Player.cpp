@@ -29,7 +29,9 @@ void Player::conquers(){
 void Player::scores(){
     cout << "scores";
 }
-
+void Player::addRegion(Region r){
+    regions.push_back(r);
+}
 void Player::showSheet(){
     
     cout << "Player " << iD << ": " << race->getRace() << endl;

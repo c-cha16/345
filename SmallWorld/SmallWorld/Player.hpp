@@ -29,6 +29,8 @@ public:
     void setRace(RaceBanners rb){ race = &rb;}
     void showSheet();
     
+    void addRegion(Region r);
+    
 private:
     //regions
     //use vectors
