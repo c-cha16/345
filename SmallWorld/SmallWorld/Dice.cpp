@@ -50,6 +50,9 @@ void Dice::rollingDice(int tokens, int regionTokens){ //rolling the dice method
     cout << "=================="<<endl;
     cout << "Rolling dice"<<endl;
     //for the purposes of the demo I created a while loop to continue rolling
+    if(tokens - regionTokens < 0){
+        x = 1;
+    }
     while(x==0){
         diceResult=random();
         storeResults(diceResult);
