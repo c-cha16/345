@@ -37,5 +37,6 @@ void Player::showSheet(){
     cout << "Player " << iD << ": " << race->getRace() << endl;
     cout << "Starting token amount :" << race->getMaxToken() + power->getMaxToken() << endl;
     cout << "Badge: " << power->getName()<< ", Skill: "<< power->getSkill()<<endl;
-    cout << "Banner: " << race->getRace()<< ", Skill: "<< race->getSkill() <<endl <<endl;
+    cout << "Banner: " << race->getRace()<< ", Skill: "<< race->getSkill() <<endl;
+    cout << "Number of regions: " << regions.size() <<endl <<endl;
 }
