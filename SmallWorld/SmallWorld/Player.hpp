@@ -13,6 +13,7 @@
 #include "Badges.hpp"
 #include "RaceBanners.hpp"
 #include "Region.hpp"
+#include "Dice.hpp"
 #include <stdio.h>
 #include <vector>
 
@@ -30,7 +31,9 @@ public:
     void showSheet();
     
     void addRegion(Region r);
-    
+    void addDice(Dice d){ dice = &d;}
+    //DICE BADGES BANNERS MIGHT NEED TO BE CHANGE
+    void roll(int tok, int rt){dice->rollingDice(tok, rt);};
 private:
     //regions
     //use vectors
@@ -38,6 +41,7 @@ private:
     Badges* power;
     RaceBanners* race;
     vector <Region> regions;
+    Dice* dice;
 };
 
 #endif /* Player_hpp */
