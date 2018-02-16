@@ -21,6 +21,12 @@ RaceBanners::RaceBanners(string s, int n, string ski){
     active = true;
     skill = ski;
 }
+RaceBanners::RaceBanners(RaceBanners const &rb){
+    race = rb.race;
+    tokenNum = rb.tokenNum;
+    active = rb.active;
+    skill = rb.skill;
+}
 RaceBanners::~RaceBanners(){
     
 }

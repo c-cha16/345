@@ -15,15 +15,18 @@ using namespace std;
 class Badges{
 public:
     Badges();
-    Badges(string s, int n);
+    Badges(string s, int n, string ski);
     ~Badges();
     
     string getName(){ return name;}
-    void setName(string s){name =s;}
+    void setName(string s){name = s;}
     int getMaxToken(){return tokenAmt;}
     void setMaxToken(int n){ tokenAmt = n;}
+    string getSkill(){ return skill;}
+    void setSkill(string s){skill = s;}
 private:
     string name;
+    string skill;
     int tokenAmt;
 };
 

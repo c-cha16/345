@@ -12,9 +12,10 @@ Badges::Badges(){
     name = "";
     tokenAmt =0;
 }
-Badges::Badges(string s, int n){
+Badges::Badges(string s, int n, string ski){
     name = s;
     tokenAmt =n;
+    skill = ski;
 }
 Badges::~Badges(){
     

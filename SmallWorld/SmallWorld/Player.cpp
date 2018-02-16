@@ -7,9 +7,9 @@
 //
 #include <iostream>
 #include "Player.hpp"
-
+int iD = 0;
 Player::Player(){
-    
+    iD++;
 }
 Player::~Player(){
     
@@ -22,4 +22,12 @@ void Player::conquers(){
 }
 void Player::scores(){
     cout << "scores";
+}
+
+void Player::showSheet(){
+    
+    cout << "Player " << iD << ": " << race->getRace() << endl;
+    cout << "Starting token amount :" << race->getMaxToken() + power->getMaxToken() << endl;
+    cout << "Badge: " << power->getName()<< ", Skill: "<< power->getSkill()<<endl;
+    cout << "Banner: " << race->getRace()<< ", Skill: "<< race->getSkill() <<endl <<endl;
 }
