@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7584E4B42036A69E004C37D3 /* MapDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7584E4B32036A69E004C37D3 /* MapDriver.cpp */; };
 		75F6B2882036A0E00091960A /* ComponentDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B2742036A0DF0091960A /* ComponentDriver.cpp */; };
 		75F6B2892036A0E00091960A /* Tokens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B2752036A0DF0091960A /* Tokens.cpp */; };
 		75F6B28A2036A0E00091960A /* Dice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75F6B2792036A0DF0091960A /* Dice.cpp */; };
@@ -33,6 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7584E4B32036A69E004C37D3 /* MapDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MapDriver.cpp; sourceTree = "<group>"; };
 		75F6B26A2036A0CB0091960A /* SmallWorld */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SmallWorld; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F6B2742036A0DF0091960A /* ComponentDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ComponentDriver.cpp; sourceTree = "<group>"; };
 		75F6B2752036A0DF0091960A /* Tokens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tokens.cpp; sourceTree = "<group>"; };
@@ -67,6 +69,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7584E4B52036A6A4004C37D3 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				7584E4B32036A69E004C37D3 /* MapDriver.cpp */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		75F6B2612036A0CB0091960A = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +116,7 @@
 				75F6B2792036A0DF0091960A /* Dice.cpp */,
 				75F6B27E2036A0DF0091960A /* Dice.hpp */,
 				75F6B2862036A0E00091960A /* DiceDriver.cpp */,
+				7584E4B52036A6A4004C37D3 /* Map */,
 			);
 			path = SmallWorld;
 			sourceTree = "<group>";
@@ -167,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7584E4B42036A69E004C37D3 /* MapDriver.cpp in Sources */,
 				75F6B28E2036A0E00091960A /* Player.cpp in Sources */,
 				75F6B28B2036A0E00091960A /* Coins.cpp in Sources */,
 				75F6B2922036A0E00091960A /* GamePieces.cpp in Sources */,
@@ -291,6 +303,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /opt/local/include/;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -299,6 +313,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /opt/local/include/;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib/;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
