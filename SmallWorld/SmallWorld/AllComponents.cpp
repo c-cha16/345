@@ -16,16 +16,29 @@
 
 AllComponents::AllComponents(){
     //components
-        //coins
+        //done coins, banners
     bank = new Coins[109];
     raceHolder = new RaceBanners[14];
+        //not done tokens, badges, pieces
+    tokenHolder = new Tokens[186];
+    pieceHolder = new GamePieces[35];
+    
+    badgeHolder = new Badges[20];
 }
 AllComponents::~AllComponents(){
-    delete bank;
+    delete[] bank;
     bank = nullptr;
     
-    delete raceHolder;
+    delete[] raceHolder;
     raceHolder = nullptr;
+    
+    delete[] tokenHolder;
+    tokenHolder = nullptr;
+    delete[] pieceHolder;
+    pieceHolder = nullptr;
+    
+    delete[] badgeHolder;
+    badgeHolder = nullptr;
 }
 void AllComponents::createCoins(){
     char c;
@@ -41,7 +54,6 @@ void AllComponents::createCoins(){
         }
         switch (c) {
             case 'A':
-                cout << "test1" <<endl;
                 bank[i].setValue(10);
                 break;
             case 'B':
@@ -133,5 +145,211 @@ void AllComponents::showBanners(){
     }
 }
 
+void AllComponents::createBadges(){
+    //similiar to above
+}
+void AllComponents::showBadges(){
+    //similiar to above
+}
 
+void AllComponents::createTokens(){
+    //please finish off strings
+    char c;
+    for (int i =0; i<186; i++) {
+        if(i<15){
+            c = 'A';
+        }else if(i<23){
+            c = 'D';
+        }else if(i<34){
+            c = 'E';
+        }else if(i<44){
+            c = 'G'; //ghouls
+        }else if(i<57){
+            c = 'R';
+        }else if(i<77){
+            c = 'S'; //skeletons
+        }else if(i<88){
+            c = 'T'; //Tritons
+        }else if(i<99){
+            c = 'X';//Giants
+        }else if(i<110){
+            c = 'H'; //halfings
+        }else if(i<120){
+            c = 'Y'; //humans
+        }else if(i<130){
+            c = 'O';
+        }else if(i<148){
+            c = 'Z'; //Sorcerers
+        }else if(i<158){
+            c = 'V'; //Trolls
+        }else if(i<168){
+            c = 'W'; //wizards
+        }else if(i<186){
+            c = 'L';
+        }
+        switch (c) {
+            case 'A':
+                tokenHolder[i].setRace("Amazons");
+                break;
+            case 'D':
+                tokenHolder[i].setRace("Dwarves");
+                break;
+            case 'E':
+                tokenHolder[i].setRace("Elves");
+                break;
+            case 'G':
+                tokenHolder[i].setRace("Ghouls");
+                break;
+            case 'R':
+                tokenHolder[i].setRace("Ratmen");
+                break;
+            case 'S':
+                tokenHolder[i].setRace("Skeletons");
+                break;
+            case 'T':
+                tokenHolder[i].setRace("Tritons");
+                break;
+            case 'X':
+                tokenHolder[i].setRace("Giants");
+                break;
+            case 'H':
+                tokenHolder[i].setRace("Halfins");
+                break;
+            case 'Y':
+                tokenHolder[i].setRace("Humans");
+                break;
+            case 'O':
+                tokenHolder[i].setRace("orcs");
+                break;
+            case 'Z':
+                tokenHolder[i].setRace("Sorcerers");
+                break;
+            case 'V':
+                tokenHolder[i].setRace("Trolls");
+                break;
+            case 'W':
+                tokenHolder[i].setRace("Wizs");
+                break;
+            case 'L':
+                tokenHolder[i].setRace("Lost Tribes");
+                break;
+        }
+        
+    }
+    
+}
+void AllComponents::showTokens(){
+    int n = 0;
+    for (int i=0; i<186; i++) {
+        if(i<15){
+            n++;
+        }else if(i<23){
+            if(i==15){n=0;}
+            n++;
+        }else if(i<34){
+            if(i==23){n=0;}
+            n++;
+        }else if(i<44){
+            if(i==34){n=0;}
+            n++;
+        }else if(i<57){
+            if(i==44){n=0;}
+            n++;
+        }else if(i<77){
+            if(i==57){n=0;}
+            n++;
+        }else if(i<88){
+            if(i==77){n=0;}
+            n++;
+        }else if(i<99){
+            if(i==88){n=0;}
+            n++;
+        }else if(i<110){
+            if(i==99){n=0;}
+            n++;
+        }else if(i<120){
+            if(i==110){n=0;}
+            n++;
+        }else if(i<130){
+            if(i==120){n=0;}
+            n++;
+        }else if(i<148){
+            if(i==130){n=0;}
+            n++;
+        }else if(i<158){
+            if(i==148){n=0;}
+            n++;
+        }else if(i<168){
+            if(i==158){n=0;}
+            n++;
+        }else if(i<186){
+            if(i==168){n=0;}
+            n++;
+        }
+        cout << "RaceToken #" << n << " " << tokenHolder[i].getRace() << endl;
+    }
+}
+void AllComponents::createGamePieces(){
+    for (int i = 0; i<35; i++) {
+        if(i<10){
+            pieceHolder[i].setType("Troll Lairs");
+        }else if(i<19){
+            pieceHolder[i].setType("Mountains");
+        }else if(i<25){
+            pieceHolder[i].setType("Fortresses");
+        }else if(i<30){
+            pieceHolder[i].setType("Emcampments");
+        }else if(i<32){
+            pieceHolder[i].setType("Holes in the ground");
+        }else if(i<34){
+            pieceHolder[i].setType("Heroes");
+        }
+        if(i == 34){
+            pieceHolder[i].setType("Dragon");
+        }
+    }
+}
+void AllComponents::showGamePieces(){
+    int n = 0;
+    for (int i=0; i<35; i++) {
+        if(i<10){
+            n++;
+            cout << "Piece: "<< pieceHolder[i].getType() << " #" << n <<endl;
+        }else if(i<19){
+            if(i == 10){
+                n = 0;
+            }
+            n++;
+            cout << "Piece: "<< pieceHolder[i].getType() << " #" << n << endl;
+        }else if(i<25){
+            if(i == 19){
+                n = 0;
+            }
+            n++;
+            cout << "Piece: " << pieceHolder[i].getType() << " #" <<n<<endl;
+        }else if(i<30){
+            if(i == 25){
+                n = 0;
+            }
+            n++;
+            cout << "Piece: " << pieceHolder[i].getType() << " #" <<n<<endl;
+        }else if(i<32){
+            if(i == 30){
+                n = 0;
+            }
+            n++;
+            cout << "Piece: " << pieceHolder[i].getType() << " #" <<n<<endl;
+        }else if(i<34){
+            if(i == 32){
+                n = 0;
+            }
+            n++;
+            cout << "Piece: " << pieceHolder[i].getType() << " #" <<n<<endl;
+        }
+        if(i == 34){
+            n = 1;
+            cout << "Piece: " << pieceHolder[i].getType() << " #" <<n<<endl;
+        }
+    }
+}
 

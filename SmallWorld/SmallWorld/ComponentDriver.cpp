@@ -19,6 +19,13 @@ int main(int argc, const char * argv[]) {
     cout << "=======================" <<endl;
     ac->createBanners();
     ac->showBanners();
+    cout << "=======================" <<endl;
+    ac->createGamePieces();
+    ac->createTokens();
+    ac->showTokens();
+    ac->showGamePieces();
     
+    delete ac;
+    ac = nullptr;
     return 0;
 }

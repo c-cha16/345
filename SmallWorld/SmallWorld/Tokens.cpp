@@ -10,7 +10,7 @@
 
 
 Tokens::Tokens(){
-    race = "default";
+    race = "";
 }
 Tokens::Tokens(string s){
     race = s;
