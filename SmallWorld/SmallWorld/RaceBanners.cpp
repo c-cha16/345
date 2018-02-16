@@ -11,7 +11,19 @@
 //active/decline skills
 RaceBanners::RaceBanners(){
     race = "";
+    tokenNum = 0;
+    active = true;
+    skill = "";
+}
+RaceBanners::RaceBanners(string s, int n, string ski){
+    race = s;
+    tokenNum = n;
+    active = true;
+    skill = ski;
 }
 RaceBanners::~RaceBanners(){
     
+}
+void RaceBanners::useSkill(){
+    cout << " Using skill: " << skill << endl;
 }

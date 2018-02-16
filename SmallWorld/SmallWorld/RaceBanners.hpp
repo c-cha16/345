@@ -10,11 +10,13 @@
 #define RaceBanners_hpp
 #include <stdio.h>
 #include <string>
+#include <iostream>
 using namespace std;
 
 class RaceBanners{
 public:
     RaceBanners();
+    RaceBanners(string s, int n, string ski);
     ~RaceBanners();
     string getRace(){ return race;}
     void setRace(string s){ race =s;}
@@ -22,8 +24,11 @@ public:
     void setMaxToken(int n){ tokenNum =n;}
     void setActive(){active = true;}
     void setDecline(){active = false;}
+    void useSkill();
+    void setSkill(string s){ skill = s;}
 private:
     string race;
+    string skill;
     int tokenNum;
     bool active;
     

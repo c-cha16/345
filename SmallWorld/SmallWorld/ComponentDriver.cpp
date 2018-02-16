@@ -15,8 +15,10 @@ int main(int argc, const char * argv[]) {
     AllComponents* ac = new AllComponents();
     
     ac->createCoins();
-    
     ac->showBank();
+    cout << "=======================" <<endl;
+    ac->createBanners();
+    ac->showBanners();
     
     return 0;
 }
