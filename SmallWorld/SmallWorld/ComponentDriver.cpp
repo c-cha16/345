@@ -18,20 +18,20 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     AllComponents* ac = new AllComponents();
     
-    ac->createCoins();
-    ac->showBank();
+    //ac->createCoins();
+    //ac->showBank();
     cout << "=======================" <<endl;
     ac->createBanners();
-    ac->showBanners();
+    //ac->showBanners();
     cout << "=======================" <<endl;
-    ac->createGamePieces();
-    ac->createTokens();
-    ac->showTokens();
-    ac->showGamePieces();
+    //ac->createGamePieces();
+    //ac->createTokens();
+    //ac->showTokens();
+    //ac->showGamePieces();
     cout << "=======================" <<endl;
-    //add Badges
-    ac->createBadges();
-    ac->showBadges();
+    
+    //ac->createBadges();
+    //ac->showBadges();
     cout << "=======================" <<endl;
     delete ac;
     ac = nullptr;
@@ -60,8 +60,8 @@ int main(int argc, const char * argv[]) {
     Dice* d2 = new Dice();
     p1->addDice(*d1);
     p2->addDice(*d2);
-    p1->roll(35, 2);
-    p2->roll(30, 1);
+    //p1->roll(35, 2);
+    //p2->roll(30, 1);
     
     delete b1;
     b1 = nullptr;
@@ -78,9 +78,17 @@ int main(int argc, const char * argv[]) {
     
     MapLoader* mp = new MapLoader();
     mp->readFile("2_3person.map");
-    
+    Maps* map = mp->getMap();
+    map->vertices();
+    //map->incidentEdges(0);
+    map->incidentEdges(1);
+    //map->incidentEdges(2);
+    //map->incidentEdges(3);
+    //map->incidentEdges(4);
     delete mp;
     mp = nullptr;
+    //delete map;
+    map = nullptr;
     return 0;
 }
 

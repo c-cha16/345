@@ -21,7 +21,7 @@ public:
     string name;
     void addEdge(Edge* e);
 private:
-    Edge* nextEdge;
+    //Edge* nextEdge;
 };
 
 #endif /* Edge_hpp */
