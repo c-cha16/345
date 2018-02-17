@@ -35,6 +35,7 @@ void Maps::addNode(int n, string s){
 void Maps::connectEdges(int x, int y){
     Edge* e1 = new Edge(map[y].name);
     map[x].addEdge(e1);
+    e1 = nullptr;
 }
 Node::Node(string s){
     name = s;
@@ -45,7 +46,8 @@ Node::Node(int n, string s){
     name = s;
 }
 Node::~Node(){
-    
+    //delete map;
+    edgeL.clear();
 }
 
 void Node::addEdge(Edge* e){

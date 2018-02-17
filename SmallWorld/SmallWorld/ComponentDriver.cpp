@@ -17,21 +17,21 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     AllComponents* ac = new AllComponents();
-    
-    //ac->createCoins();
-    //ac->showBank();
+    /*
+    ac->createCoins();
+    ac->showBank();
     cout << "=======================" <<endl;
     ac->createBanners();
-    //ac->showBanners();
+    ac->showBanners();
     cout << "=======================" <<endl;
-    //ac->createGamePieces();
-    //ac->createTokens();
-    //ac->showTokens();
-    //ac->showGamePieces();
+    ac->createGamePieces();
+    ac->createTokens();
+    ac->showTokens();
+    ac->showGamePieces();
     cout << "=======================" <<endl;
     
-    //ac->createBadges();
-    //ac->showBadges();
+    ac->createBadges();
+    ac->showBadges();
     cout << "=======================" <<endl;
     delete ac;
     ac = nullptr;
@@ -75,16 +75,16 @@ int main(int argc, const char * argv[]) {
     d1 =nullptr;
     delete d2;
     d2 =nullptr;
-    
+    */
     MapLoader* mp = new MapLoader();
     mp->readFile("2_3person.map");
     Maps* map = mp->getMap();
     map->vertices();
-    //map->incidentEdges(0);
+    map->incidentEdges(0);
     map->incidentEdges(1);
-    //map->incidentEdges(2);
-    //map->incidentEdges(3);
-    //map->incidentEdges(4);
+    map->incidentEdges(2);
+    map->incidentEdges(3);
+    map->incidentEdges(4);
     delete mp;
     mp = nullptr;
     //delete map;
