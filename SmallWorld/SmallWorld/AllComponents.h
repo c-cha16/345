@@ -31,7 +31,7 @@ public:
     
     void createGamePieces();
     void showGamePieces();
-    //not done
+    
     void createBadges();
     void showBadges();
 private:

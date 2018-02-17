@@ -14,6 +14,7 @@
 #include <fstream>
 #include <string>
 #include <cstdlib>
+#include "Maps.hpp"
 
 using namespace std;
 
@@ -22,8 +23,10 @@ public:
     MapLoader();
     ~MapLoader();
     void readFile(string s);
+    vector<string> split(const string &s, char delim);
+    Maps* getMap(){ return map;}
 private:
-    
+    Maps* map;
 };
 
 

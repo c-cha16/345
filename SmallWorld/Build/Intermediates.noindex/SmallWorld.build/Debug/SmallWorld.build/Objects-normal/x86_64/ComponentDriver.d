@@ -10,4 +10,6 @@ dependencies: \
   /Users/charleschan/345/SmallWorld/SmallWorld/Player.hpp \
   /Users/charleschan/345/SmallWorld/SmallWorld/Map/Region.hpp \
   /Users/charleschan/345/SmallWorld/SmallWorld/Dice.hpp \
-  /Users/charleschan/345/SmallWorld/SmallWorld/Map/MapLoader.hpp
+  /Users/charleschan/345/SmallWorld/SmallWorld/Map/MapLoader.hpp \
+  /Users/charleschan/345/SmallWorld/SmallWorld/Maps.hpp \
+  /Users/charleschan/345/SmallWorld/SmallWorld/Edge.hpp

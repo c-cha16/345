@@ -17,15 +17,37 @@ Maps::Maps(){
 Maps::~Maps(){
   
 }
+void Maps::vertices(){
+    cout << "Map(vertices):" << endl;
+    for (int i = 0; i<map.size(); i++) {
+        cout <<"#"<<i+1<< " "<<map[i].name <<endl;
+    }
+}
+void Maps::incidentEdges(int n){
+    cout << "Adjacent Places:"<<endl;
+    for (int i = 0; i<map[n].edgeL.size(); i++) {
+        cout << map[n].edgeL[i].name << endl;
+    }
+}
+void Maps::addNode(int n, string s){
+    map.push_back(Node(n, s));
+}
+void Maps::connectEdges(int x, int y){
+    Edge* e1 = new Edge(map[y].name);
+    map[x].addEdge(e1);
+}
 Node::Node(string s){
+    name = s;
+}
+
+Node::Node(int n, string s){
+    order = n;
     name = s;
 }
 Node::~Node(){
     
 }
-void Maps::addNode(string s){
-    map.push_back(Node(s));
-}
+
 void Node::addEdge(Edge* e){
-    edge1 = e;
+    edgeL.push_back(*e);
 }

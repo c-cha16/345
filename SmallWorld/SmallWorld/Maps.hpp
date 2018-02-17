@@ -19,19 +19,22 @@ using namespace std;
 class Node{
 public:
     Node(string s);
+    Node(int n,string s);
     ~Node();
     string name;
-    Edge* edge1;
+    vector <Edge> edgeL;
     void addEdge(Edge* e);
+    int order;
 };
 
 class Maps{
 public:
     Maps();
     ~Maps();
-    void addNode(string s);
-    string* incidentEdges();
+    void addNode(int n, string s);
+    void incidentEdges(int n);
     void vertices(); //To be added
+    void connectEdges(int x, int y);
 private:
     vector<Node> map;
 };

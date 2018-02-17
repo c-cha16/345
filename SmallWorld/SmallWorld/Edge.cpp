@@ -13,8 +13,8 @@ Edge::Edge(string s){
 }
 //Not sure if I did this right
 Edge::~Edge(){
-    
+
 }
 void Edge::addEdge(Edge* e){
-    nextEdge = e;
+    //nextEdge = e;
 }
