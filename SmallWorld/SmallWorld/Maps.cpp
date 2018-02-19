@@ -35,6 +35,7 @@ void Maps::addNode(int n, string s){
 void Maps::connectEdges(int x, int y){
     Edge* e1 = new Edge(map[y].name);
     map[x].addEdge(e1);
+    cout << "(" << map[x].name << ", " << map[y].name << ")" << endl;
     e1 = nullptr;
 }
 Node::Node(string s){

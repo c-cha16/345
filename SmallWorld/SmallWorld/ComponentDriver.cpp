@@ -79,7 +79,11 @@ int main(int argc, const char * argv[]) {
     MapLoader* mp = new MapLoader();
     mp->readFile("2_3person.map");
     Maps* map = mp->getMap();
+    cout << "=======================" <<endl;
+    cout <<"Size: "<< mp->size()<<endl;
+    cout << "=======================" <<endl;
     map->vertices();
+    cout << "=======================" <<endl;
     map->incidentEdges(0);
     map->incidentEdges(1);
     map->incidentEdges(2);

@@ -41,7 +41,7 @@ void MapLoader::readFile(string s){
     int  y = 0;
     int  z = 0;
     vector <string> v;
-    vector<string> newVector;
+    vector <string> newVector;
     while(getline(fin, line)) {
         // here you can check if line contains the string
         // you're looking for or a string with a # at the end
@@ -51,7 +51,11 @@ void MapLoader::readFile(string s){
             tempStr = line;
             cout << line << endl;
         }
-
+        if(line == ""){
+            tempStr = line;
+            cout << line << endl;
+            temp = 0;
+        }
         if(temp == 1){
             v = split(tempStr, ' ');
             if(v.size()>1){
@@ -72,7 +76,7 @@ void MapLoader::readFile(string s){
                 ss2 >> z;
                 cout<<"(" << z;
                 cout << y <<")"<<endl;
-                map->connectEdges(z, y);
+                map->connectEdges(z-1, y-1);
                 ss1.clear();
                 ss1.ignore();
                 ss2.clear();
@@ -80,15 +84,16 @@ void MapLoader::readFile(string s){
             }
             newVector.clear();
         }
+        if(line[1]=='b'&&line[0]=='['){
+            temp = 2;
+        }
         if(line[3] == 'u'&&line[0]=='['){
             temp = 1;
         }
         v.clear();
-        if(line[1]=='b'&&line[0]=='['){
-            temp = 2;
-        }
+
         line = "";
-        //map->getNodeVector().pop_back();
+        line.clear();
     }
     fin.close();
     
