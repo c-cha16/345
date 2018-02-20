@@ -24,10 +24,14 @@ void Maps::vertices(){
     }
 }
 void Maps::incidentEdges(int n){
+    
+    cout << "----------------------------"<<endl;
+    cout << map[n].name << " ";
     cout << "Adjacent Places:"<<endl;
     for (int i = 0; i<map[n].edgeL.size(); i++) {
-        cout << map[n].edgeL[i].name << endl;
+        cout << i+1<<". "<<map[n].edgeL[i].name << endl;
     }
+    cout<<endl;
 }
 void Maps::addNode(int n, string s){
     map.push_back(Node(n, s));

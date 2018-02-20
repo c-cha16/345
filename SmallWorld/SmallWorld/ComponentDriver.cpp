@@ -83,7 +83,7 @@ int main(int argc, const char * argv[]) {
     cout <<"Size: "<< mp->size()<<endl;
     cout << "=======================" <<endl;
     map->vertices();
-    cout << "=======================" <<endl;
+    //cout << "=======================" <<endl;
     map->incidentEdges(0);
     map->incidentEdges(1);
     map->incidentEdges(2);
