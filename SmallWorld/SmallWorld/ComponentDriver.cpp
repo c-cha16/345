@@ -77,7 +77,7 @@ int main(int argc, const char * argv[]) {
     d2 =nullptr;
     */
     MapLoader* mp = new MapLoader();
-    mp->readFile("2_3person.map");
+    mp->readFile("canada.map");
     Maps* map = mp->getMap();
     cout << "=======================" <<endl;
     cout <<"Size: "<< mp->size()<<endl;

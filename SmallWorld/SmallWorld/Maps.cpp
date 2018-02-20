@@ -22,6 +22,7 @@ void Maps::vertices(){
     for (int i = 0; i<map.size(); i++) {
         cout <<"#"<<i+1<< " "<<map[i].name <<endl;
     }
+    cout << endl;
 }
 void Maps::incidentEdges(int n){
     
