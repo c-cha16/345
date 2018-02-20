@@ -35,6 +35,8 @@ public:
     void incidentEdges(int n);
     void vertices(); //To be added
     void connectEdges(int x, int y);
+    vector<Node> getNodeVector(){ return map;}
+    int size(){return map.size();}
 private:
     vector<Node> map;
 };

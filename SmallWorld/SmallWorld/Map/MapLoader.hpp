@@ -25,6 +25,7 @@ public:
     void readFile(string s);
     vector<string> split(const string &s, char delim);
     Maps* getMap(){ return map;}
+    int size(){return map->size();}
 private:
     Maps* map;
 };

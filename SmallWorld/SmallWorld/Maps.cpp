@@ -24,10 +24,14 @@ void Maps::vertices(){
     }
 }
 void Maps::incidentEdges(int n){
+    
+    cout << "----------------------------"<<endl;
+    cout << map[n].name << " ";
     cout << "Adjacent Places:"<<endl;
     for (int i = 0; i<map[n].edgeL.size(); i++) {
-        cout << map[n].edgeL[i].name << endl;
+        cout << i+1<<". "<<map[n].edgeL[i].name << endl;
     }
+    cout<<endl;
 }
 void Maps::addNode(int n, string s){
     map.push_back(Node(n, s));
@@ -35,6 +39,8 @@ void Maps::addNode(int n, string s){
 void Maps::connectEdges(int x, int y){
     Edge* e1 = new Edge(map[y].name);
     map[x].addEdge(e1);
+    cout << "(" << map[x].name << ", " << map[y].name << ")" << endl;
+    e1 = nullptr;
 }
 Node::Node(string s){
     name = s;
@@ -45,7 +51,8 @@ Node::Node(int n, string s){
     name = s;
 }
 Node::~Node(){
-    
+    //delete map;
+    edgeL.clear();
 }
 
 void Node::addEdge(Edge* e){
