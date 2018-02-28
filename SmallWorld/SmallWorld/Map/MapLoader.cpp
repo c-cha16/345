@@ -20,21 +20,18 @@ MapLoader::~MapLoader(){
     map = nullptr;
 }
 void MapLoader::readFile(string s){
-    ofstream myfile ("exampleXXX.txt");
-    
-    if (myfile.is_open()){
-        myfile << "This is a line.\n";
-        myfile << "This is another line.\n";
-        myfile.close();
-    }
-    else cout << "Unable to open file";
-    
+//    ofstream myfile ("exampleXXX.txt");
+//    if (myfile.is_open()){
+//        myfile << "This is a line.\n";
+//        myfile << "This is another line.\n";
+//        myfile.close();
+//    }
+//    else cout << "Unable to open file";
     ifstream fin(s);
     if(!fin){
         cerr << "Can't open file " << s << endl;
         exit( -1 );
     }
-    
     string line, tempStr, lineTemp;
     int temp = 0;
     int x = 0;
@@ -49,11 +46,11 @@ void MapLoader::readFile(string s){
         //getline(fin,line,'#');
         if(line != ""){
             tempStr = line;
-            cout << line << endl;
+            //cout << line << endl;
         }
         if(line == ""){
             tempStr = line;
-            cout << line << endl;
+            //cout << line << endl;
             temp = 0;
         }
         if(temp == 1){
@@ -74,7 +71,7 @@ void MapLoader::readFile(string s){
                 stringstream ss2(newVector[0]);
                 ss1 >> y;
                 ss2 >> z;
-                cout<<"(" << z;
+                cout<<"(" << z <<", ";
                 cout << y <<")"<<endl;
                 map->connectEdges(z-1, y-1);
                 ss1.clear();
