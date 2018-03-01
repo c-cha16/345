@@ -20,7 +20,10 @@ public:
     ~Edge();
     string name;
     void addEdge(Edge* e);
+    void setNumReg(int n){numRegion = n;};
+    int getNumReg(){return numRegion;};
 private:
+    int numRegion;
     //Edge* nextEdge;
 };
 

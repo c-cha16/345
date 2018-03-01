@@ -77,6 +77,7 @@ int main(int argc, const char * argv[]) {
     d2 =nullptr;
     */
     MapLoader* mp = new MapLoader();
+    cout<<"Enter Map name"<<endl;
     string mapName;
     cin >> mapName;
     cin.clear();
@@ -93,6 +94,7 @@ int main(int argc, const char * argv[]) {
     map->incidentEdges(2);
     map->incidentEdges(3);
     map->incidentEdges(4);
+    map->BFS(0);
     delete mp;
     mp = nullptr;
     //delete map;
