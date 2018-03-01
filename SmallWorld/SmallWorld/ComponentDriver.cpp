@@ -12,6 +12,7 @@
 #include "Region.hpp"
 #include "Dice.hpp"
 #include "MapLoader.hpp"
+#include <fstream>
 
 using namespace std;
 
