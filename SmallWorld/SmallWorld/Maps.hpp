@@ -24,7 +24,12 @@ public:
     string name;
     vector <Edge> edgeL;
     void addEdge(Edge* e);
-    int order;
+    int order; //unused right now
+    void setVisited(){visited=true;};
+    void unVisit(){visited=false;};
+    bool getVisit(){return visited;};
+private:
+    bool visited;
 };
 
 class Maps{
@@ -35,8 +40,13 @@ public:
     void incidentEdges(int n);
     void vertices(); //To be added
     void connectEdges(int x, int y);
+    vector<Node> getNodeVector(){ return map;}
+    int size(){return map.size();}
+    bool checkVisit();
+    void BFS(int s);
 private:
     vector<Node> map;
+    
 };
 
 
