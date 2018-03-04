@@ -24,8 +24,12 @@ public:
     ~GameStart();
     void setNumPlayers();
     int getNumPlayer();
-    string run();
-    Maps* map(string mapName);
+    void runPlayers();
+    bool runMap();
+    void clearMap();
+    Maps* returnMap(){
+        return mp->getMap();
+    }
 private:
     int numPlayers;
     MapLoader* mp;

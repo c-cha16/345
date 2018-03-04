@@ -26,6 +26,7 @@ public:
     vector<string> split(const string &s, char delim);
     Maps* getMap(){ return map;}
     int size(){return map->size();}
+    void clear(){map->clear();}
 private:
     Maps* map;
 };

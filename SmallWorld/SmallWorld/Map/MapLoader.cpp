@@ -17,7 +17,7 @@ MapLoader::MapLoader(){
 }
 MapLoader::~MapLoader(){
     delete map;
-    map = nullptr;
+    map = NULL;
 }
 void MapLoader::readFile(string s){
 //    ofstream myfile ("exampleXXX.txt");

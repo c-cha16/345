@@ -106,17 +106,20 @@ int main(int argc, const char * argv[]) {
 }
 */
 int main(){
+    bool stay = true;
     GameStart* game = new GameStart();
+    game->runPlayers();
+    do {
+        stay = !game->runMap();
+        game->clearMap();
+    }while(stay);
     
-    Maps* map = game->map(game->run());
-    
-    
-    
+    Maps* map = game->returnMap();
     cout << "=======================" <<endl;
     cout <<"Size: "<< map->size()<<endl;
     cout << "=======================" <<endl;
     map->vertices();
-    //cout << "=======================" <<endl;
+    cout << "=======================" <<endl;
     map->incidentEdges(0);
     map->BFS(0);
 }
