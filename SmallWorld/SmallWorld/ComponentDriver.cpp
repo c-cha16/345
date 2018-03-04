@@ -13,12 +13,12 @@
 #include "Dice.hpp"
 #include "MapLoader.hpp"
 #include <fstream>
-
+#include "GameStart.hpp"
 using namespace std;
-
+/*
 int main(int argc, const char * argv[]) {
     AllComponents* ac = new AllComponents();
-    /*
+    
     ac->createCoins();
     ac->showBank();
     cout << "=======================" <<endl;
@@ -76,7 +76,7 @@ int main(int argc, const char * argv[]) {
     d1 =nullptr;
     delete d2;
     d2 =nullptr;
-    */
+    
     MapLoader* mp = new MapLoader();
     cout<<"Enter Map name"<<endl;
     string mapName;
@@ -100,6 +100,23 @@ int main(int argc, const char * argv[]) {
     mp = nullptr;
     //delete map;
     map = nullptr;
+     
     return 0;
+     
 }
-
+*/
+int main(){
+    GameStart* game = new GameStart();
+    
+    Maps* map = game->map(game->run());
+    
+    
+    
+    cout << "=======================" <<endl;
+    cout <<"Size: "<< map->size()<<endl;
+    cout << "=======================" <<endl;
+    map->vertices();
+    //cout << "=======================" <<endl;
+    map->incidentEdges(0);
+    map->BFS(0);
+}
