@@ -14,6 +14,7 @@
 #include "MapLoader.hpp"
 #include <fstream>
 #include "GameStart.hpp"
+#include "GameLoop.hpp"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -103,17 +104,23 @@ int main(int argc, const char * argv[]) {
 
 
 //int main(){
-    bool stay = true;
-    GameStart* game = new GameStart();
-    game->runPlayers();
-    game->runMap();
     
-    Maps* map = game->returnMap();
-    cout << "=======================" <<endl;
-    cout <<"Size: "<< map->size()<<endl;
-    cout << "=======================" <<endl;
-    map->vertices();
-    cout << "=======================" <<endl;
-    map->incidentEdges(0);
-    map->BFS(0);
+    
+//    bool stay = true;
+//    GameStart* game = new GameStart();
+//    game->runPlayers();
+//    game->runMap();
+//
+//    Maps* map = game->returnMap();
+//    cout << "=======================" <<endl;
+//    cout <<"Size: "<< map->size()<<endl;
+//    cout << "=======================" <<endl;
+//    map->vertices();
+//    //cout << "=======================" <<endl;
+//    //map->incidentEdges(0);
+//    map->BFS(0);
+    
+    
+    
+    
 }

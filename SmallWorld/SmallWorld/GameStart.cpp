@@ -54,8 +54,6 @@ void GameStart::runMap(){
         tempMap->clear();
         tempMap = NULL;
     }while(true);
-    
-   
 }
 
 void GameStart::clearMap(){
