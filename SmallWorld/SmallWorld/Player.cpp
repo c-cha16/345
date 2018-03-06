@@ -25,13 +25,13 @@ Player::~Player(){
     //dice = NULL;
 }
 void Player::picks_race(){
-    cout << "picks race and special badge"<<endl;
+    cout << "Player "<<iD << ": "<< "picks race and special badge"<<endl;
 }
 void Player::conquers(){
-    cout << "go and conquer regions" <<endl;
+    cout << "Player "<<iD << ": "<<"go and conquer regions" <<endl;
 }
 void Player::scores(){
-    cout << "go and score your active and declined races" <<endl;
+    cout << "Player "<<iD << ": "<< "go and score your active and declined races" <<endl;
 }
 void Player::addRegion(Region r){
     regions.push_back(r);

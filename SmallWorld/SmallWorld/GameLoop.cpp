@@ -8,8 +8,10 @@
 
 #include "GameLoop.hpp"
 GameLoop::GameLoop(int n){
-    GameTracker gt = *new GameTracker(n);
+    GameTracker gt = *new GameTracker();
+    gt.setNumPlayers(n);
     cout << "Total number of players: " << n << endl;
+    numPlayers = n;
     maxNumTurns = gt.getMaxTurn();
     cout << "Total number of turns: " << maxNumTurns << endl << endl;
     for(int i = 1; i<n+1; i++){
@@ -21,10 +23,10 @@ GameLoop::~GameLoop(){
     for(int i = 0; i<numPlayers;i++){
         allPlayers.pop_back();
     }
-    gt = NULL;
 }
 void GameLoop::firstRun(){
     cout <<"1st run"<<endl;
+    cout << gt.getCurrentTurn() << endl;
     for(int i = 0; i < numPlayers; i++){
         allPlayers[i].picks_race();
         allPlayers[i].conquers();
@@ -34,7 +36,19 @@ void GameLoop::firstRun(){
 }
 void GameLoop::mainRun(){
     cout <<"Main loop running"<<endl;
-    
+    bool exit = true;
+    while (exit) {
+        gt.addTurn();
+        cout << gt.getCurrentTurn() << endl;
+        cout << maxNumTurns << endl;
+        if(gt.getCurrentTurn() == maxNumTurns){
+            exit = false;
+        }
+        for (int i = 0; i<numPlayers; i++) {
+            allPlayers[i].conquers();
+            allPlayers[i].scores();
+        }
+    }
     cout <<endl;
 }
 void GameLoop::findWinner(){

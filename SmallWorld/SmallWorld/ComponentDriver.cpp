@@ -101,25 +101,20 @@ int main(int argc, const char * argv[]) {
 //    //delete map;
 //    map = nullptr;
     
-//    return 0;
-//
-//}
 
-
-//int main(){
     
-    GameStart* game = new GameStart();
-    game->runPlayers();
-    game->runMap();
-
-    Maps* map = game->returnMap();
-    cout << "=======================" <<endl;
-    cout <<"Size: "<< map->size()<<endl;
-    cout << "=======================" <<endl;
-    map->vertices();
-    //cout << "=======================" <<endl;
-    //map->incidentEdges(0);
-    map->BFS(0);
+//    GameStart* game = new GameStart();
+//    game->runPlayers();
+//    game->runMap();
+//
+//    Maps* map = game->returnMap();
+//    cout << "=======================" <<endl;
+//    cout <<"Size: "<< map->size()<<endl;
+//    cout << "=======================" <<endl;
+//    map->vertices();
+//    //cout << "=======================" <<endl;
+//    //map->incidentEdges(0);
+//    map->BFS(0);
     
     
     int numPlay= 0;
@@ -131,4 +126,6 @@ int main(int argc, const char * argv[]) {
     gl->firstRun();
     gl->mainRun();
     gl->findWinner();
+    
+    return 0;
 }
