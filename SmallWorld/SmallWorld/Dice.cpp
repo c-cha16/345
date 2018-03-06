@@ -10,7 +10,7 @@
 #include "Dice.hpp"
 
 Dice::Dice(){
-    cout<<"DICE WAS JUST CREATED"<<endl;
+    //cout<<"DICE WAS JUST CREATED"<<endl;
     container.push_back(0);
     container.push_back(0);
     container.push_back(0);

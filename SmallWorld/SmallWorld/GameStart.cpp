@@ -16,12 +16,20 @@ GameStart::~GameStart(){
     mp = NULL;
 }
 void GameStart::runPlayers(){
+    int temp = 0;
+    bool stay = true;
     // list all files in current directory.
     //You could put any file path in here, e.g. "/home/me/mwah" to list that directory
-    cout<<"How many players?"<<endl;
-    cin >> numPlayers;
-    cin.clear();
-    cin.ignore();
+    do{
+        cout<<"How many players?"<<endl;
+        cin >> temp;
+        cin.clear();
+        cin.ignore();
+        if(temp < 6 && temp > 1){
+            stay = false;
+        }
+    }while(stay);
+    numPlayers = temp;
 
 }
 void GameStart::runMap(){
