@@ -20,24 +20,15 @@ public:
     GameTracker();
     GameTracker(int n);
     ~GameTracker();
-    int getNumPlayers() const{
-        return numPlayers;
-    }
-    void setNumPlayers(int n){
-        numPlayers = n;
-    }
-    int getCurrentTurn() const{
-        return currentTurn;
-    }
-    int getMaxTurn() const{
-        return maxTurn;
-    }
-    void setMaxTurn(int m){
-        maxTurn = m;
-    }
+    int getNumPlayers() const{return numPlayers;}
+    void setNumPlayers(int n){numPlayers = n;}
+    int getCurrentTurn() const{return currentTurn;}
+    int getMaxTurn() const{return maxTurn;}
+    void setMaxTurn(int m){maxTurn = m;}
+    void addTurn(){currentTurn++;}
 private:
-    static int currentTurn;
-    static int maxTurn;
+    int currentTurn;
+    int maxTurn;
     int numPlayers; //useless?
 };
 #endif /* GameTracker_hpp */

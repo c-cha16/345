@@ -37,6 +37,8 @@ int main(int argc, const char * argv[]) {
 //    cout << "=======================" <<endl;
 //    delete ac;
 //    ac = nullptr;
+    
+    /*
     Badges* b1 = new Badges("Alchemist", 4, "+2 coins at the end of every end your race has not gone into decline yet");
     RaceBanners* rb1 = new RaceBanners("Humans", 5, "FarmLand Region");
     Badges* b2 = new Badges("Beserk", 4, "Use renforcement die");
@@ -60,6 +62,7 @@ int main(int argc, const char * argv[]) {
     p1->roll(35, 2);
     p2->roll(30, 1);
 
+     */
 
     
 //    delete b1;
@@ -119,8 +122,13 @@ int main(int argc, const char * argv[]) {
 //    //cout << "=======================" <<endl;
 //    //map->incidentEdges(0);
 //    map->BFS(0);
-    
-    
-    
-    
+    int numPlay= 0;
+    cout << "How many players?" <<endl; 
+    cin >> numPlay;
+    cin.clear();
+    cin.ignore();
+    GameLoop *gl = new GameLoop(numPlay);
+    gl->firstRun();
+    gl->mainRun();
+    gl->findWinner();
 }

@@ -409,4 +409,6 @@ dependencies: \
   /opt/local/include/boost/range/const_iterator.hpp \
   /opt/local/include/boost/filesystem/convenience.hpp \
   /opt/local/include/boost/filesystem/string_file.hpp \
-  /opt/local/include/boost/filesystem/fstream.hpp
+  /opt/local/include/boost/filesystem/fstream.hpp \
+  /Users/charleschan/345/SmallWorld/SmallWorld/GameLoop.hpp \
+  /Users/charleschan/345/SmallWorld/SmallWorld/GameTracker.hpp

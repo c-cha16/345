@@ -7,11 +7,12 @@
 //
 
 #include "GameTracker.hpp"
-
 GameTracker::GameTracker(){
-    
+    currentTurn = 1;
+    numPlayers = 0;
 }
 GameTracker::GameTracker(int n){
+    currentTurn = 1;
     numPlayers = n;
     switch (n) {
         case 2:
