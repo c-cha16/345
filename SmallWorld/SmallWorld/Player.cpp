@@ -10,6 +10,7 @@
 int iD = 0;
 Player::Player(int i){
     setID(i);
+    Dice dice = *new Dice();
 }
 Player::~Player(){
     //???
@@ -20,7 +21,7 @@ Player::~Player(){
     //delete availTokens;
     availTokens = nullptr;
     //delete dice;
-    dice = nullptr;
+    //dice = NULL;
 }
 void Player::picks_race(){
     cout << "picked race";

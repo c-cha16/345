@@ -24,9 +24,9 @@ void GameStart::runPlayers(){
     cin.ignore();
 
 }
-bool GameStart::runMap(){
+void GameStart::runMap(){
     Maps* tempMap;
-        
+    do{
         path p (".");
         cout << endl<<"Please enter one of the following maps"<<endl;
         directory_iterator end_itr;
@@ -49,11 +49,13 @@ bool GameStart::runMap(){
         tempMap = mp->getMap();
         if(tempMap->BFS(0)){
             tempMap = NULL;
-            return true;
+            return;
         }
+        tempMap->clear();
+        tempMap = NULL;
+    }while(true);
     
-    tempMap = NULL;
-    return false;
+   
 }
 
 void GameStart::clearMap(){

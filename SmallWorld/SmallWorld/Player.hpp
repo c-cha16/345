@@ -31,11 +31,11 @@ public:
     void showSheet();
     
     void addRegion(Region r);
-    void addDice(Dice d){ dice = &d;}
+    //void addDice(Dice d){ dice = &d;}
     //ID needs to be set
     void setID(int i){ iD=i; };
     //DICE BADGES BANNERS MIGHT NEED TO BE CHANGE
-    void roll(int tok, int rt){dice->rollingDice(tok, rt);};
+    void roll(int tok, int rt){dice.rollingDice(tok, rt);};
 private:
     //ID
     int iD;
@@ -45,7 +45,7 @@ private:
     Badges* power;
     RaceBanners* race;
     vector <Region> regions;
-    Dice* dice;
+    Dice dice;
 };
 
 #endif /* Player_hpp */

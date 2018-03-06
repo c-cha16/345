@@ -20,7 +20,10 @@ Maps& Maps::operator =(const Maps &rightside){
     return *this;
 }
 Maps::~Maps(){
-  
+    int n = map.size();
+    for (int i =0; i>n; i++) {
+        map.pop_back();
+    }
 }
 void Maps::vertices(){
     cout << "Map(vertices):" << endl;

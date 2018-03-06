@@ -25,7 +25,7 @@ public:
     void setNumPlayers();
     int getNumPlayer();
     void runPlayers();
-    bool runMap();
+    void runMap();
     void clearMap();
     Maps* returnMap(){
         return mp->getMap();
