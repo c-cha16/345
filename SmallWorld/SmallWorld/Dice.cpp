@@ -7,22 +7,40 @@
 //
 
 #include <iostream>
-
 #include "Dice.hpp"
 
 Dice::Dice(){
     //cout<<"DICE WAS JUST CREATED"<<endl;
+    container.push_back(0);
+    container.push_back(0);
+    container.push_back(0);
+    container.push_back(0);
+    container.push_back(0);
 }
-
+Dice& Dice::operator=(Dice other){
+    cout << "copy assignment of Dice\n";
+    container[0] = other.container[0];
+    container[1] = other.container[1];
+    container[2] = other.container[2];
+    container[3] = other.container[3];
+    container[4] = other.container[4];
+    return *this;
+}
 Dice::~Dice(){
+    container.pop_back();
+    container.pop_back();
+    container.pop_back();
+    container.pop_back();
+    container.pop_back();
     //container = nullptr;
     
 }
 void Dice::percentage(){ //returns the percentage of each numbers rolled
-    cout<< "\nYou have rolled 1:  " << container[1] << " times --> "<<(container[1]/container[0])*100 <<"%\n";
-    cout<< "You have rolled 2:  " << container[2] << " times --> "<<(container[2]/container[0])*100 <<"%\n";
-    cout<< "You have rolled 3:  " << container[3] << " times --> "<<(container[3]/container[0])*100 <<"%\n";
-    cout<< "You have rolled a total of:  " << container[0] << endl;
+    cout<< "\nYou have rolled 0:  " << container[0] << " times --> "<<(container[0]/container[4])*100 <<"%\n";
+    cout<< "You have rolled 1:  " << container[1] << " times --> "<<(container[1]/container[4])*100 <<"%\n";
+    cout<< "You have rolled 2:  " << container[2] << " times --> "<<(container[2]/container[4])*100 <<"%\n";
+    cout<< "You have rolled 3:  " << container[3] << " times --> "<<(container[3]/container[4])*100 <<"%\n";
+    cout<< "You have rolled a total of:  " << container[4] << endl;
 }
 
 void Dice::storeResults(int i){
@@ -36,15 +54,18 @@ void Dice::storeResults(int i){
     }
     else if (i==3){
         container[3]=container[3]+1;
+        
+    }else{
+        container[0]=container[0]+1;
+        
     }
-    container[0] = container[0] + 1;
+    container[4] = container[4] + 1;
 }
 
 void Dice::rollingDice(int tokens, int regionTokens){ //rolling the dice method
     int numConquer;
     int showResults;
     int x = 0;
-    //int diceResult;
     cout << "=================="<<endl;
     cout << "Final conquest" << endl;
     cout << "=================="<<endl;
@@ -54,7 +75,10 @@ void Dice::rollingDice(int tokens, int regionTokens){ //rolling the dice method
         x = 1;
     }
     while(x==0){
-        diceResult=random();
+        diceResult = rand()%6 +1;
+        if(diceResult > 3){
+            diceResult = 0;
+        }
         storeResults(diceResult);
         cout << "The dice you rolled was ";
         cout << diceResult << endl;
@@ -86,8 +110,4 @@ void Dice::rollingDice(int tokens, int regionTokens){ //rolling the dice method
         cin.clear();
         cin.ignore();
     }
-}
-
-int Dice::random(){  //random method to generate a number between 1-3 for the dice.
-    return (rand()%3 +1);
 }

@@ -15,9 +15,15 @@
 Maps::Maps(){
 
 }
-//Not sure if I did this right
+Maps& Maps::operator =(const Maps &rightside){
+    this->map = rightside.map;
+    return *this;
+}
 Maps::~Maps(){
-  
+    int n = map.size();
+    for (int i =0; i>n; i++) {
+        map.pop_back();
+    }
 }
 void Maps::vertices(){
     cout << "Map(vertices):" << endl;
@@ -52,10 +58,10 @@ void Maps::connectEdges(int x, int y){
     Edge* e1 = new Edge(map[y].name);
     e1->setNumReg(y+1);
     map[x].addEdge(e1);
-    cout << "(" << map[x].name << ", " << map[y].name << ")" << endl;
+    //cout << "(" << map[x].name << ", " << map[y].name << ")" << endl;
     e1 = nullptr;
 }
-void Maps::BFS(int s){//index number
+bool Maps::BFS(int s){//index number
     // Mark all the vertices as not visited
     bool *visited = new bool[map.size()];
     for(int i = 0; i < map.size(); i++){
@@ -75,7 +81,7 @@ void Maps::BFS(int s){//index number
     while(!queue.empty()){
         // Dequeue a vertex from queue and print it
         s = queue.front();
-        cout << s << " ";
+        //cout << s << " ";
         queue.pop_front();
         
         // Get all adjacent vertices of the dequeued
@@ -93,12 +99,15 @@ void Maps::BFS(int s){//index number
     //delete objects!!!!!
     for(int i = 0; i < map.size(); i++){
         if(!visited[i]){
-            cout << "Not connected graph"<<endl;
-            exit(0);
+            cout << "Invalid Map: not a connected graph"<<endl;
+            delete[] visited;
+            *visited = nullptr;
+            return false;
         }
     }
     delete[] visited;
     *visited = nullptr;
+    return true;
 }
 Node::Node(string s){
     name = s;

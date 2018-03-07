@@ -35,6 +35,7 @@ private:
 class Maps{
 public:
     Maps();
+    Maps& operator =(const Maps &rightside);
     ~Maps();
     void addNode(int n, string s);
     void incidentEdges(int n);
@@ -43,7 +44,8 @@ public:
     vector<Node> getNodeVector(){ return map;}
     int size(){return map.size();}
     bool checkVisit();
-    void BFS(int s);
+    bool BFS(int s);
+    void clear(){map.clear();}
 private:
     vector<Node> map;
     

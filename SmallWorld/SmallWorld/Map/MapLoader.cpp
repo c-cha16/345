@@ -17,7 +17,7 @@ MapLoader::MapLoader(){
 }
 MapLoader::~MapLoader(){
     delete map;
-    map = nullptr;
+    map = NULL;
 }
 void MapLoader::readFile(string s){
 //    ofstream myfile ("exampleXXX.txt");
@@ -65,14 +65,14 @@ void MapLoader::readFile(string s){
         }
         if(temp == 2){
             newVector = split(tempStr, ' ');
-            cout<<"size: " << newVector.size()<<endl;
+            //cout<<"size: " << newVector.size()<<endl;
             for (int i=1; i<newVector.size(); i++) {
                 stringstream ss1(newVector[i]);
                 stringstream ss2(newVector[0]);
                 ss1 >> y;
                 ss2 >> z;
-                cout<<"(" << z <<", ";
-                cout << y <<")"<<endl;
+                //cout<<"(" << z <<", ";
+                //cout << y <<")"<<endl;
                 map->connectEdges(z-1, y-1);
                 ss1.clear();
                 ss1.ignore();

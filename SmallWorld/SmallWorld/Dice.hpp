@@ -10,6 +10,7 @@
 #define Dice_hpp
 using namespace std;
 #include <stdio.h>
+#include <vector>
 
 class Dice{
 public:
@@ -20,8 +21,9 @@ public:
     void storeResults(int i);
     void percentage();
     int getdiceResult();
+    Dice& operator=(Dice other);
 private:
-    float container [4] = {0};
+    vector <float> container;
     int diceResult;
 };
 #endif /* Dice_hpp */

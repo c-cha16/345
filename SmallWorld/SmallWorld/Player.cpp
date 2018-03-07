@@ -10,6 +10,8 @@
 int iD = 0;
 Player::Player(int i){
     setID(i);
+    cout << "Player " << i << " created" <<endl;
+    Dice dice = *new Dice();
 }
 Player::~Player(){
     //???
@@ -20,16 +22,16 @@ Player::~Player(){
     //delete availTokens;
     availTokens = nullptr;
     //delete dice;
-    dice = nullptr;
+    //dice = NULL;
 }
 void Player::picks_race(){
-    cout << "picked race";
+    cout << "Player "<<iD << ": "<< "picks race and special badge"<<endl;
 }
 void Player::conquers(){
-    cout << "conquered";
+    cout << "Player "<<iD << ": "<<"go and conquer regions" <<endl;
 }
 void Player::scores(){
-    cout << "scores";
+    cout << "Player "<<iD << ": "<< "go and score your active and declined races" <<endl;
 }
 void Player::addRegion(Region r){
     regions.push_back(r);
