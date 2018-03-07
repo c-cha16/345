@@ -18,6 +18,10 @@ GameLoop::GameLoop(int n){
         // increased size by 1 so that the first number is 1
         allPlayers.push_back(Player(i));
     }
+    //added just for DEMO CASE
+    for (int i = 0; i<n; i++) {
+        allPlayers[i].setVP(10*i);
+    }
 }
 GameLoop::~GameLoop(){
     for(int i = 0; i<numPlayers;i++){
@@ -39,8 +43,8 @@ void GameLoop::mainRun(){
     bool exit = true;
     while (exit) {
         gt.addTurn();
-        cout << gt.getCurrentTurn() << endl;
-        cout << maxNumTurns << endl;
+        cout << "Current Turn is" << gt.getCurrentTurn() << endl;
+        //cout << "Last turn is " <<maxNumTurns << endl;
         if(gt.getCurrentTurn() == maxNumTurns){
             exit = false;
         }
@@ -53,6 +57,20 @@ void GameLoop::mainRun(){
 }
 void GameLoop::findWinner(){
     cout << "Max turn has been reached, winner found to be: "<< endl;
-    
+    vector <Player> :: iterator it;
+    int maxVP = 0;
+    int tempVP = 0;
+    int counter = 0;
+    int postionWinner = 0;
+    for (it = allPlayers.begin(); it != allPlayers.end(); ++it) {
+        tempVP = it->getVP();
+        if(tempVP > maxVP){
+            maxVP = tempVP;
+            postionWinner = counter;
+        }
+        counter ++;
+    }
+    cout << "Winner is .... " << "Player "<<allPlayers[postionWinner].getID() <<endl;
+    cout << "with .... " << maxVP << " points"<<endl;
     cout <<endl;
 }

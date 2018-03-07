@@ -36,6 +36,9 @@ public:
     void setID(int i){ iD=i; };
     //DICE BADGES BANNERS MIGHT NEED TO BE CHANGE
     void roll(int tok, int rt){dice.rollingDice(tok, rt);};
+    int getVP(){return victoryPoints;}
+    void setVP(int vp){victoryPoints=vp;}
+    int getID(){return iD;}
 private:
     //ID
     int iD;
@@ -46,6 +49,7 @@ private:
     RaceBanners* race;
     vector <Region> regions;
     Dice dice;
+    int victoryPoints;
 };
 
 #endif /* Player_hpp */
