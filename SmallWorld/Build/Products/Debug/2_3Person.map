@@ -10,7 +10,7 @@ World 5 white
 [countries]
 1 Sea 5 108 66
 2 Mountain 5 148 77
-3 Plains 5 74 83
+3 Hills 5 74 83
 4 Swamp 5 54 105
 5 Grass 5 68 89
 6 Swamp
@@ -22,16 +22,15 @@ World 5 white
 12 Grass
 13 Swamp
 14 Forest
-15 Plains
+15 Hills
 16 Grass
 17 Forest
-18 Plains
+18 Hills
 19 Sea
 20 Mountain
-21 Plains
+21 Hills
 22 Grass
 23 Forest
-24 FAKE
 
 [borders]
 1 2 15
@@ -57,4 +56,3 @@ World 5 white
 21 11 12 13 20 22
 22 8 10 11 18 20 21 23
 23 8 9 10 22
-24

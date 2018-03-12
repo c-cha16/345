@@ -1,2 +1,3 @@
-dependencies: /Users/charleschan/345/SmallWorld/SmallWorld/MapObjects.cpp \
-  /Users/charleschan/345/SmallWorld/SmallWorld/MapObjects.hpp
+dependencies: \
+  /Users/charleschan/345/SmallWorld/SmallWorld/Pieces/MapObjects.cpp \
+  /Users/charleschan/345/SmallWorld/SmallWorld/Pieces/MapObjects.hpp

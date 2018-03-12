@@ -15,6 +15,7 @@
 #include <fstream>
 #include "GameStart.hpp"
 #include "GameLoop.hpp"
+#include "StartUp.hpp"
 using namespace std;
 
 int main(int argc, const char * argv[]) {
@@ -101,22 +102,26 @@ int main(int argc, const char * argv[]) {
 //    //delete map;
 //    map = nullptr;
     
+    //demo #2
+    //set game
 
+    GameStart* game = new GameStart();
+    game->runPlayers();
+    game->runMap();
+    Maps* map = game->returnMap();
+    cout << "=======================" <<endl;
+    cout <<"Size: "<< map->size()<<endl;
+    cout << "=======================" <<endl;
+    //map->vertices();
+    map->BFS(0);
     
-//    GameStart* game = new GameStart();
-//    game->runPlayers();
-//    game->runMap();
-//
-//    Maps* map = game->returnMap();
-//    cout << "=======================" <<endl;
-//    cout <<"Size: "<< map->size()<<endl;
-//    cout << "=======================" <<endl;
-//    map->vertices();
-//    //cout << "=======================" <<endl;
-//    //map->incidentEdges(0);
-//    map->BFS(0);
+    //Startup: setup pieces
+    StartUp *start = new StartUp();
+    start->setPieces(2, map);
+    map->vertices();
     
-    
+    //main game loop demo
+    /*
     int numPlay= 0;
     cout << "How many players?" <<endl; 
     cin >> numPlay;
@@ -126,6 +131,9 @@ int main(int argc, const char * argv[]) {
     gl->firstRun();
     gl->mainRun();
     gl->findWinner();
+    */
+    
+    
     
     return 0;
 }

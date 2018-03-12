@@ -16,10 +16,9 @@ GameStart::~GameStart(){
     mp = NULL;
 }
 void GameStart::runPlayers(){
+    //method to get the number of players
     int temp = 0;
     bool stay = true;
-    // list all files in current directory.
-    //You could put any file path in here, e.g. "/home/me/mwah" to list that directory
     do{
         cout<<"How many players?"<<endl;
         cin >> temp;
@@ -33,6 +32,8 @@ void GameStart::runPlayers(){
 
 }
 void GameStart::runMap(){
+    //User can select from a choice of maps, then method
+    //checks validity for them before moving forward
     Maps* tempMap;
     do{
         path p (".");
@@ -41,7 +42,6 @@ void GameStart::runMap(){
         // cycle through the directory
         for (directory_iterator itr(p); itr != end_itr; ++itr){
             if (is_regular_file(itr->path())) {
-                // assign current file name to current_file and echo it out to the console.
                 string currentFile = itr->path().string();
                 string correctFile = currentFile.substr(2,currentFile.size()-1);
                 cout << correctFile << endl;
