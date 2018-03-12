@@ -25,6 +25,7 @@ bool GameTracker::checkLastTurn(){
     return false;
 }
 void GameTracker::setNumPlayers(int n){
+    //From the input of number of player, the game tracker will know how many turns it will be
     numPlayers = n;
     switch (n) {
         case 2:

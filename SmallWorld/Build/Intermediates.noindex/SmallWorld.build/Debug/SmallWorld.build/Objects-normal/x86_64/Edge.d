@@ -1,2 +1,2 @@
-dependencies: /Users/charleschan/345/SmallWorld/SmallWorld/Edge.cpp \
-  /Users/charleschan/345/SmallWorld/SmallWorld/Edge.hpp
+dependencies: /Users/charleschan/345/SmallWorld/SmallWorld/Map/Edge.cpp \
+  /Users/charleschan/345/SmallWorld/SmallWorld/Map/Edge.hpp

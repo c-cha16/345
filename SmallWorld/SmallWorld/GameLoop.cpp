@@ -8,17 +8,18 @@
 
 #include "GameLoop.hpp"
 GameLoop::GameLoop(int n){
+    //Constructor
     GameTracker gt = *new GameTracker();
     gt.setNumPlayers(n);
     cout << "Total number of players: " << n << endl;
     numPlayers = n;
     maxNumTurns = gt.getMaxTurn();
+    //added just for DEMO CASE
     cout << "Total number of turns: " << maxNumTurns << endl << endl;
     for(int i = 1; i<n+1; i++){
         // increased size by 1 so that the first number is 1
         allPlayers.push_back(Player(i));
     }
-    //added just for DEMO CASE
     for (int i = 0; i<n; i++) {
         allPlayers[i].setVP(10*i);
     }
@@ -29,6 +30,7 @@ GameLoop::~GameLoop(){
     }
 }
 void GameLoop::firstRun(){
+    //First move for all players has picks_race
     cout <<"1st run"<<endl;
     cout << gt.getCurrentTurn() << endl;
     for(int i = 0; i < numPlayers; i++){
@@ -39,6 +41,7 @@ void GameLoop::firstRun(){
     cout <<endl;
 }
 void GameLoop::mainRun(){
+    //main function to run, will only stop when it is the last turn
     cout <<"Main loop running"<<endl;
     bool exit = true;
     while (exit) {
@@ -56,6 +59,7 @@ void GameLoop::mainRun(){
     cout <<endl;
 }
 void GameLoop::findWinner(){
+    //this method will iterate through the players and search for which player has the most points
     cout << "Max turn has been reached, winner found to be: "<< endl;
     vector <Player> :: iterator it;
     int maxVP = 0;
